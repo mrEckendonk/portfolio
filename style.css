@@ -153,7 +153,7 @@ html {
   }
   
   .joga {
-    /* padding-top: 50px; */
+    padding-top: 50px;
     display: flex;
     grid-gap: 15px;
     max-width: 100%;
@@ -161,12 +161,13 @@ html {
   
   .text2 {
     font-family: "Crete Round", serif;
+    
     font-size: 32px;
     /* width: 295px; */
     font-weight: 400;
     line-height: 44px;
     margin-left: 12px;
-    /* padding-top: 12px; */
+    padding-top: 12px;
     display: flex;
     flex-direction: column;
   }
@@ -178,7 +179,7 @@ html {
     padding-top: 12px;
     font-style: normal;
     font-weight: normal;
-    /* line-height: 24px; */
+    line-height: 24px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -348,8 +349,6 @@ html {
   }
   
   .about-me {
-    /* width: 100%; */
-    
     height: 1537px;
     left: 0;
     background: #1c1a19;
