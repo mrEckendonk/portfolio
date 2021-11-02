@@ -1,4 +1,4 @@
-hml {
+html {
   -webkit-box-sizing: border-box;
 }
 
@@ -77,13 +77,13 @@ h3 {
   background-position: right 110%;
   gap: 12px;
 }
-
+  
 .my-name {
   font-family: 'Crete Round', sans-serif;
   font-size: 56px;
   letter-spacing: 0.37px;
   position: static;
-  /* width: 327px; */
+  width: 327px;
   height: 124px;
   line-height: 56px;
   font-weight: normal;
@@ -100,7 +100,7 @@ h3 {
   display: flex;
   align-items: flex-start;
   padding-top: 120px;
-  /* width: 327px; */
+  width: 327px;
 }
 
 .text {
@@ -125,11 +125,8 @@ ul {
 }
 
 .section2 {
-  /* width: 100%; */
-  /* padding-left: 24px; */
-  /* padding-right: 24px; */
-  padding: 40px 24px;
-  display: grid;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .recent-work {
@@ -137,54 +134,37 @@ ul {
   font-size: 40px;
   font-style: normal;
   font-weight: 400;
-  padding-top: 140px;
+  padding-top: 180px;
   padding-bottom: 24px;
   color: #1c1a19;
 }
 
-.line-section {
-  display: grid;
-  padding: 120px 24px;
-  justify-content: center;
-  justify-items: center;
-  grid-gap: 24px;
-  min-width: 100%;
-  border-top: 1px solid #212121;
+.line {
+  padding: 24px 1px 24px 1px;
+  color: #212121;
 }
 
 .joga {
   padding-top: 50px;
-  display: flex;
-  grid-gap: 15px;
-  max-width: 100%;
 }
 
 .text2 {
   font-family: "Crete Round", serif;
-  
   font-size: 32px;
-  /* width: 295px; */
+  width: 295px;
   font-weight: 400;
   line-height: 44px;
-  margin-left: 12px;
   padding-top: 12px;
-  display: flex;
-  flex-direction: column;
 }
 
 .text3 {
   font-family: "Inter", serif;
   font-size: 16px;
-  /* width: 327px; */
+  width: 327px;
   padding-top: 12px;
   font-style: normal;
   font-weight: normal;
   line-height: 24px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 12px;
 }
 
 .nav-page2 {
@@ -223,7 +203,7 @@ ul {
 }
 
 .professional-art {
-  background: url("assets/professional_backgroundsvg");
+  background: url("assets/professional_background.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 24px 24px;
@@ -349,6 +329,7 @@ a:visited {
 }
 
 .about-me {
+  width: 100%;
   height: 1537px;
   left: 0;
   background: #1c1a19;
@@ -364,11 +345,9 @@ a:visited {
   color: #ff6b00;
   padding-top: 50px;
   line-height: 88px;
-  text-align: left;
-  margin-left: 24px;
 }
 
-.second {
+.about-me .second {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -418,10 +397,9 @@ a:visited {
 
 .skills {
   margin-top: 80px;
-  width: 100%x;
+  width: 375px;
   height: 825px;
   left: 0;
-  text-align: center;
   background: #1c1a19;
 }
 
@@ -462,8 +440,9 @@ button:active {
 .svg2 {
   margin-top: -55px;
 }
+
 /* Contact Form */
-.ontact-container {
+.contact-container {
   display: flex;
   align-items: center;
   flex-direction: column;
