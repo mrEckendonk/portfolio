@@ -322,5 +322,52 @@
           </ul>
         </article>
       </section>
+      <!-- Contact Form-->
+    <section class="contact-container">
+      <div class="main-text">
+        <p>
+          I'm always interested in hearing about new projects, so if you'd like
+          to chat please get in touch.
+        </p>
+      </div>
+
+      <form
+        class="form-container"
+        id="fs-frm"
+        name="simple-contact-form"
+        accept-charset="utf-8"
+        action="https://formspree.io/f/xyyloboj"
+        method="post"
+      >
+        <input
+          class="form-input1"
+          type="text"
+          name="name"
+          maxlength="30"
+          id="full-name"
+          placeholder="Full name"
+          required
+        />
+        <hr class="contact-hr" />
+        <input
+          class="form-input2"
+          type="email"
+          name="_replyto"
+          id="email-address"
+          placeholder="Email address"
+          required
+        />
+        <hr class="contact-hr" />
+        <textarea
+          class="form-text"
+          rows="5"
+          name="message"
+          maxlength="500"
+          id="message"
+          placeholder="Enter text here"
+          required
+        ></textarea>
+        <button class="about-btn4" type="submit">Get in touch</button>
+      </form>
 </body>
 </html>
