@@ -129,7 +129,7 @@ ul {
   padding-right: 24px;
 }
 
-.parent {
+.parent1 {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(6, 1fr);
@@ -228,10 +228,10 @@ ul {
 }
 
 .professional-art {
-  background: url("assets/professional_background.svg");
+  /* background: url("assets/professional_background.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 24px 24px;
+  background-position: 24px 24px; */
   padding-left: 24px;
   display: grid;
   grid-template-rows: 3fr 2fr 1fr 1fr;
@@ -240,7 +240,37 @@ ul {
   align-items: end;
 }
 
-.professional-art1 h2 {
+.img-card1{
+  background: url("assets/image_backgrnd1.png");
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  background-size: auto;
+  background-position: 24px 24px;
+  padding-top: 350px;
+}
+
+.img-card2{
+  background: url("assets/image_backgrnd2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 24px 24px;
+}
+
+.img-card3{
+  background: url("assets/image_backgrnd3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 24px 24px;
+}
+
+.img-card4{
+  background: url("assets/image_backgrnd4.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 24px 24px;
+}
+
+.professional-art h2 {
   font-family: "Crete Round", serif;
   font-weight: 400;
   font-size: 32px;
@@ -249,7 +279,7 @@ ul {
   margin-right: 24px;
 }
 
-.professional-art1 p {
+.professional-art p {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -260,12 +290,12 @@ ul {
   padding-right: 24px;
 }
 
-.professional-art1 .professional-navigation {
+.professional-art .professional-navigation {
   padding: 0 25px;
   align-self: center;
 }
 
-.professional-art1 .professional-btn {
+.professional-art .professional-btn {
   font-family: "Inter", sans-serif;
   font-size: 17px;
   align-self: stretch;
@@ -276,7 +306,7 @@ ul {
   color: white;
 }
 
-.professional-art1 ul li {
+.professional-art ul li {
   padding-right: 20px;
 }
 
@@ -750,11 +780,11 @@ button:active {
     grid-row-gap: 24px;
     }
     
-    .div7 { grid-area: 1 / 1 / 2 / 2; }
-    .div8 { grid-area: 1 / 2 / 2 / 3; }
-    .div9 { grid-area: 1 / 3 / 2 / 4; }
-    .div10 { grid-area: 2 / 1 / 3 / 2; }
-    .div11 { grid-area: 2 / 2 / 3 / 3; }
-    .div12 { grid-area: 2 / 3 / 3 / 4; }
+    .card1 { grid-area: 1 / 1 / 2 / 2; }
+    .card2 { grid-area: 1 / 2 / 2 / 3; }
+    .card3 { grid-area: 1 / 3 / 2 / 4; }
+    .card4 { grid-area: 2 / 1 / 3 / 2; }
+    .card5 { grid-area: 2 / 2 / 3 / 3; }
+    .card6 { grid-area: 2 / 3 / 3 / 4; }
 
 }   
