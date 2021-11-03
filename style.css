@@ -210,8 +210,6 @@ ul {
 }
 
 .professional-art {
- 
-  /* padding-left: 24px; */
   display: grid;
   grid-template-rows: 3fr 2fr 1fr 1fr;
   grid-template-columns: 1fr;
@@ -257,17 +255,13 @@ ul {
 
 .professional-art ul li {
   padding-right: 20px;
-  /* padding-left: 20px; */
-}
-
-/* .professional-art > * { */
-  /* margin: 12px 0 0 12px; */
-/* } */
+ }
 
 .img1 {
   background: url("assets/image_backgrnd1.png");
   background-repeat: no-repeat;
   background-size: cover;
+  flex-basis: 369px;
   margin-right: 24px;
   margin-bottom: 24px;
 }
@@ -276,6 +270,7 @@ ul {
   background: url("assets/image_backgrnd2.png");
   background-repeat: no-repeat;
   background-size: cover;
+  flex-basis: 369px;
   margin-right: 24px;
   margin-bottom: 24px;
 }
@@ -284,6 +279,7 @@ ul {
   background: url("assets/image_backgrnd3.png");
   background-repeat: no-repeat;
   background-size: cover;
+  flex-basis: 369px;
   margin-right: 24px;
   margin-bottom: 24px;
 }
@@ -292,6 +288,7 @@ ul {
   background: url("assets/image_backgrnd4.png");
   background-repeat: no-repeat;
   background-size: cover;
+  flex-basis: 369px;
   margin-right: 24px;
   margin-bottom: 24px;
 }
@@ -388,7 +385,8 @@ a:visited {
   line-height: 88px;
 }
 
-.about-me .second {
+.about-me 
+.second {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -404,7 +402,7 @@ a:visited {
   font-family: "Inter", sans-serif;
   font-weight: 900;
   font-size: 17px;
-  justify-self: start;
+  /* justify-self: start; */
   align-self: start;
   padding: 12px 5px;
   color: #fff;
@@ -747,4 +745,35 @@ button:active {
     display: flex;
     flex-direction: row;
   }
+
+  .img_background {
+    background: url("assets/background_desktop.svg");
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+    width:672px;
+    height:353px;
+    float:right;
+    margin-top: -250px;
+    margin-right: -50px;
+  }
+
+  .about-me,
+  .first h2 {
+    text-align: left;
+      padding-top: 130px;
+    padding-left: 80px;
+    line-height: 88px;
+  }
+  
+  .about-me 
+  .second {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: left;
+    text-shadow: 1px 1px #1c1a19;
+    color: #fff;
+    padding-left: 60px;
+    width: 500px;
+  }
+   
 }
