@@ -425,6 +425,8 @@ a:visited {
   margin-bottom: 2px;
   height: 1px;
   background-color: #fff;
+  margin-left: 24px;
+  margin-right: 24px;
 }
 
 /* Skills */
@@ -627,15 +629,13 @@ button:active {
 }
 
 .hr-line-last {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 135px;
   height: 5px;
   border-radius: 10px;
   background-color: #0d151e;
   margin-top: 1px;
   margin-bottom: 10px;
+  margin-left: 42%;
 }
 
 .desktop-nav {
