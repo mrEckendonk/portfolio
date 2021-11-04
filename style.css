@@ -786,7 +786,7 @@ button:active {
     line-height: 88px;
   }
 
-  .about-me
+  .about-me,
   .second {
     font-size: 20px;
     line-height: 24px;
