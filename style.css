@@ -372,12 +372,14 @@ a:visited {
 }
 
 .about-me {
+  display: flex;
+  flex-direction: column;
   position: absolute;
   width: 100%;
   height: 1537px;
-  margin-left: -44px;
+  /* margin-left: -44px; */
   background: #1c1a19;
-  margin-top: 120px;
+  margin-top: 110px;
 }
 
 .about-me,
@@ -400,8 +402,7 @@ a:visited {
   line-height: 24px;
   text-align: left;
   color: #fff;
-  margin-left: 24px;
-  margin-right: 24px;
+  padding-left: 24px;
 }
 
 .about-btn {
@@ -771,10 +772,11 @@ button:active {
   }
 
   .img_background {
-    background: url("assets/background_desktop2.png");
+    background: url("assets/background_desktop.svg");
     background-repeat: no-repeat;
     background-size: 100%;
-    background-position: right bottom;
+    background-position: right 10%;
+    margin-left: 180px;
     gap: 12px;
   }
 
@@ -783,7 +785,7 @@ button:active {
   .first h2 {
     text-align: left;
     padding-top: 130px;
-    /* padding-left: 80px; */
+    padding-left: 24px;
     line-height: 88px;
   }
 
@@ -795,7 +797,7 @@ button:active {
     text-shadow: 1px 1px #1c1a19;
     color: #fff;
     /* padding-left: 60px; */
-    width: 500px;
+    /* width: 500px; */
   }
 
   .line2 {
@@ -856,30 +858,30 @@ button:active {
     margin-top: -280px;
   }
 
-  .contact-hr {
-    width: 648px;
-  }
-
-  .form-text {
-    width: 648px;
-  }
-
-  .about-btn4 {
-    display: block;
-    margin-left: 24px;
-    border: 1px currentColor;
-  }
-
-  .hr-line-bottom {
-    width: 100%;
-  }
-
-  .social-icons-bottom {
-    display: flex;
-    margin-left: 50%;
-    margin-right: 50%;
-    width: 50%;
-  }
+  /* .contact-hr { */
+    /* width: 648px; */
+  /* } */
+/*  */
+  /* .form-text { */
+    /* width: 648px; */
+  /* } */
+/*  */
+  /* .about-btn4 { */
+    /* display: block; */
+    /* margin-left: 24px; */
+    /* border: 1px currentColor; */
+  /* } */
+/*  */
+  /* .hr-line-bottom { */
+    /* width: 100%; */
+  /* } */
+/*  */
+  /* .social-icons-bottom { */
+    /* display: flex; */
+    /* margin-left: 50%; */
+    /* margin-right: 50%; */
+    /* width: 50%; */
+  /* } */
 
   .hr-line-last {
     display: none;
