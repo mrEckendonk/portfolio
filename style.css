@@ -264,6 +264,7 @@ ul {
   flex-basis: 369px;
   margin-right: 24px;
   margin-bottom: 24px;
+  min-width: 330px;
 }
 
 .img2 {
@@ -273,6 +274,7 @@ ul {
   flex-basis: 369px;
   margin-right: 24px;
   margin-bottom: 24px;
+  min-width: 330px;
 }
 
 .img3 {
@@ -282,6 +284,8 @@ ul {
   flex-basis: 369px;
   margin-right: 24px;
   margin-bottom: 24px;
+  min-width: 326px;
+  min-width: 330px;
 }
 
 .img4 {
@@ -291,6 +295,7 @@ ul {
   flex-basis: 369px;
   margin-right: 24px;
   margin-bottom: 24px;
+  min-width: 330px;
 }
 
 .profesional-container {
@@ -402,7 +407,6 @@ a:visited {
   font-family: "Inter", sans-serif;
   font-weight: 900;
   font-size: 17px;
-  /* justify-self: start; */
   align-self: start;
   padding: 12px 5px;
   color: #fff;
@@ -415,7 +419,19 @@ a:visited {
   background-repeat: no-repeat;
   background-position: right 110%;
   gap: 12px;
-  padding-top: 130px;
+  background-position: right 110%;
+  width:672px;
+  height:353px;
+  float:right;
+  margin-top: -150px;
+  align-items: right;
+}
+
+.line2 {
+  margin-top: 215px;
+  margin-bottom: 2px;
+  height: 1px;
+  background-color: #fff;
 }
 
 /* Skills */
@@ -436,8 +452,8 @@ a:visited {
 
 .skills {
   margin-top: 80px;
-  width: 375px;
-  height: 825px;
+  /* width: 375px; */
+  /* height: 825px; */
   left: 0;
   background: #1c1a19;
 }
@@ -453,7 +469,9 @@ a:visited {
   color: white;
 }
 
-.inner-list {
+.inner-list1,
+.inner-list2,
+.inner-list3 {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 22px;
@@ -477,10 +495,6 @@ button:active {
   flex-direction: column;
   margin-right: 24px;
   margin-left: 24px;
-}
-
-.svg2 {
-  margin-top: -55px;
 }
 
 /* Contact Form */
@@ -622,15 +636,14 @@ button:active {
   display: none;
 }
 
-@media screen and (min-width: 768px) {
-  /* First Page Media Queries */
+@media screen and (min-width: 769px) {
   .top-bar-left {
     height: 72px;
     padding-left: 154px;
     padding-bottom: 26px;
     padding-top: 26px;
   }
-
+  
   .my-name {
     display: block;
     flex-wrap: nowrap;
@@ -749,18 +762,18 @@ button:active {
   .img_background {
     background: url("assets/background_desktop.svg");
     background-repeat:no-repeat;
-    background-size: 100% 100%;
+    background-position: right 110%;
     width:672px;
     height:353px;
     float:right;
     margin-top: -250px;
-    margin-right: -50px;
+    align-items: right;
   }
 
   .about-me,
   .first h2 {
     text-align: left;
-      padding-top: 130px;
+    padding-top: 130px;
     padding-left: 80px;
     line-height: 88px;
   }
@@ -776,4 +789,46 @@ button:active {
     width: 500px;
   }
    
+  .line2 {
+    text-align: right;
+    margin-top: 320px;
+    margin-bottom: 2px;
+    height: 1px;
+    background-color: #fff;
+    margin-left: 80px;
+  }
+
+  .skills {
+    display: grid;
+    padding-left: 80px;
+    padding-top: 120px;
+    grid-column-gap: 10px;
+  }
+
+  .skilled-1 {
+    
+  }
+
+  .inner-list1 {
+    margin-left: 10px;
+  }
+
+  .skilled-2 {
+    margin-left: 400px;
+    margin-top: -220px;
+  }
+
+  .inner-list2 {
+    margin-left: 410px;
+  }
+
+  .skilled-3 {
+    margin-left: 800px;
+    margin-top: -260px;
+  }
+
+  .inner-list3 {
+    margin-left: 810px;
+
+  }
 }
