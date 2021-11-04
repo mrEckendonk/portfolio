@@ -375,7 +375,6 @@ a:visited {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 1200px;
   background: #1c1a19;
   margin-top: 110px;
 }
@@ -414,19 +413,15 @@ a:visited {
   border: 1px solid #f55800;
 }
 
-.img_background {
+.backgroundabout-me {
   background: url("assets/about_me.png");
   background-repeat: no-repeat;
-  background-position: right 110%;
-  gap: 12px;
-  width: 672px;
-  height: 353px;
-  float: right;
-  margin-top: -150px;
+  background-position: right;
+  padding: 0 0 500px 0;
 }
 
 .line2 {
-  margin-top: 215px;
+  margin-top: -260px;
   margin-bottom: 2px;
   height: 1px;
   background-color: #fff;
@@ -452,6 +447,7 @@ a:visited {
   margin-top: 80px;
   left: 0;
   background: #1c1a19;
+  padding-bottom: 100px;
 }
 
 .skilled-1,
