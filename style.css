@@ -853,21 +853,21 @@ button:active {
   .contact-hr {
     width: 648px;
   }
-  
+
   .form-text {
     width: 648px;
   }
-  
+
   .about-btn4 {
     display: block;
     margin-left: 24px;
     border: 1px currentColor;
   }
-  
+
   .hr-line-bottom {
     width: 100%;
   }
-  
+
   .social-icons-bottom {
     display: flex;
     margin-left: 50%;
