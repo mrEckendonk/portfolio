@@ -772,7 +772,7 @@ button:active {
 
   .img_background {
     background: url("assets/background_desktop2.png");
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     background-size: 100%;
     background-position: right bottom;
     gap: 12px;
