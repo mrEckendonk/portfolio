@@ -140,7 +140,7 @@ ul {
 }
 
 .line {
-  display: flex
+  display: flex;
   text-align: center;
   margin-top: 20px;
   margin-bottom: 2px;
@@ -498,7 +498,7 @@ button:active {
 }
 
 /* Contact Form */
-.contact-container {
+.cnt-container {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -598,11 +598,20 @@ button:active {
   padding: 12px;
   background: #ff6b00;
   margin: 24px 1px;
-  border: none;
+  border: 1px solid #f55800;
   color: white;
   font-size: 17px;
   font-weight: 700;
   line-height: 24px;
+}
+
+.social-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hr-line-bottom {
@@ -616,20 +625,26 @@ button:active {
 
 .social-icons-bottom {
   color: #505f79;
-  display: inline-flex;
+  display: flex;
+  flex-direction: row; 
   padding-top: 24px;
-  padding-left: 5px;
+  padding-left: 50%;
+  padding-right: 50%;
   padding-bottom: 20px;
   grid-gap: 15px;
 }
 
 .hr-line-last {
+  display: flex;
+  flex-direction: row;
   width: 135px;
   height: 5px;
   border-radius: 10px;
   background-color: #0d151e;
   margin-top: 1px;
   margin-bottom: 10px;
+  margin-left: 30%;
+  margin-right: 70%;
 }
 
 .desktop-nav {
@@ -790,12 +805,12 @@ button:active {
   }
    
   .line2 {
-    text-align: right;
     margin-top: 320px;
     margin-bottom: 2px;
     height: 1px;
     background-color: #fff;
     margin-left: 80px;
+    margin-right: 160px;
   }
 
   .skills {
@@ -803,10 +818,6 @@ button:active {
     padding-left: 80px;
     padding-top: 120px;
     grid-column-gap: 10px;
-  }
-
-  .skilled-1 {
-    
   }
 
   .inner-list1 {
@@ -829,6 +840,55 @@ button:active {
 
   .inner-list3 {
     margin-left: 810px;
+  }
 
+  .cnt-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .main-text {
+    font-size: 40px;
+    margin-top: 130px;
+    margin-left: 80px;
+    margin-right: 24px;
+    text-align: left;
+    width: 455px;
+  }
+  
+  .form-container {
+    display: block;
+    align-items: left;
+    margin-left: 520px;
+    margin-top: -280px;
+  }
+  
+  .contact-hr {
+    width: 648Px;
+  }
+  
+  .form-text {
+    width: 648px;
+  }
+  
+  .about-btn4 {
+    display: block;
+    margin-left: 24px;
+    border: 1px currentColor;
+  }
+
+  .hr-line-bottom {
+    width: 100%;
+  }
+  
+  .social-icons-bottom {
+  display: flex;
+  margin-left: 50%;
+  margin-right: 50%;
+  width: 50%;
+  }
+
+  .hr-line-last {
+    display: none;
   }
 }
