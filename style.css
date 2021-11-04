@@ -782,7 +782,7 @@ button:active {
   .first h2 {
     text-align: left;
     padding-top: 130px;
-    padding-left: 85px;
+    padding-left: 150px;
     line-height: 88px;
   }
 
@@ -790,7 +790,7 @@ button:active {
     font-size: 20px;
     line-height: 24px;
     text-align: left;
-    padding-left: 80px;
+    padding-left: 180px;
     width: 566px;
     text-shadow: 1px 1px #1c1a19;
     color: #fff;
@@ -852,7 +852,7 @@ button:active {
   .main-text {
     font-size: 40px;
     margin-top: 130px;
-    margin-left: 150px;
+    margin-left: 240px;
     margin-right: 24px;
     text-align: left;
     width: 455px;
@@ -860,7 +860,7 @@ button:active {
 
   .form-container {
     display: block;
-    margin-left: 620px;
+    margin-left: 690px;
     margin-top: -280px;
   }
 
