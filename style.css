@@ -786,7 +786,17 @@ button:active {
     line-height: 88px;
   }
 
-  .about-me
+  .second 
+  .about-me {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: left;
+    padding-left: 80px;
+    width: 566px;
+    text-shadow: 1px 1px #1c1a19;
+    color: #fff;
+  }
+
   .second {
     font-size: 20px;
     line-height: 24px;
