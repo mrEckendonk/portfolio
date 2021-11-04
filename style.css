@@ -255,7 +255,7 @@ ul {
 
 .professional-art ul li {
   padding-right: 20px;
- }
+}
 
 .img1 {
   background: url("assets/image_backgrnd1.png");
@@ -390,7 +390,7 @@ a:visited {
   line-height: 88px;
 }
 
-.about-me 
+.about-me,
 .second {
   font-family: "Inter", sans-serif;
   font-style: normal;
@@ -419,10 +419,9 @@ a:visited {
   background-repeat: no-repeat;
   background-position: right 110%;
   gap: 12px;
-  background-position: right 110%;
-  width:672px;
-  height:353px;
-  float:right;
+  width: 672px;
+  height: 353px;
+  float: right;
   margin-top: -150px;
   align-items: right;
 }
@@ -452,8 +451,6 @@ a:visited {
 
 .skills {
   margin-top: 80px;
-  /* width: 375px; */
-  /* height: 825px; */
   left: 0;
   background: #1c1a19;
 }
@@ -626,7 +623,7 @@ button:active {
 .social-icons-bottom {
   color: #505f79;
   display: flex;
-  flex-direction: row; 
+  flex-direction: row;
   padding-top: 24px;
   padding-left: 50%;
   padding-right: 50%;
@@ -658,7 +655,7 @@ button:active {
     padding-bottom: 26px;
     padding-top: 26px;
   }
-  
+
   .my-name {
     display: block;
     flex-wrap: nowrap;
@@ -775,14 +772,12 @@ button:active {
   }
 
   .img_background {
-    background: url("assets/background_desktop.svg");
+    background: url("assets/background_desktop2.png");
     background-repeat:no-repeat;
     background-position: right 110%;
-    width:672px;
-    height:353px;
-    float:right;
-    margin-top: -250px;
-    align-items: right;
+    background-size: 100%;
+    background-position: right bottom;
+    gap: 12px;
   }
 
   .about-me,
@@ -792,8 +787,8 @@ button:active {
     padding-left: 80px;
     line-height: 88px;
   }
-  
-  .about-me 
+
+  .about-me
   .second {
     font-size: 20px;
     line-height: 24px;
@@ -803,7 +798,7 @@ button:active {
     padding-left: 60px;
     width: 500px;
   }
-   
+
   .line2 {
     margin-top: 320px;
     margin-bottom: 2px;
@@ -855,22 +850,21 @@ button:active {
     text-align: left;
     width: 455px;
   }
-  
+
   .form-container {
     display: block;
-    align-items: left;
     margin-left: 520px;
     margin-top: -280px;
   }
-  
+
   .contact-hr {
-    width: 648Px;
+    width: 648px;
   }
-  
+
   .form-text {
     width: 648px;
   }
-  
+
   .about-btn4 {
     display: block;
     margin-left: 24px;
@@ -880,12 +874,12 @@ button:active {
   .hr-line-bottom {
     width: 100%;
   }
-  
+
   .social-icons-bottom {
-  display: flex;
-  margin-left: 50%;
-  margin-right: 50%;
-  width: 50%;
+    display: flex;
+    margin-left: 50%;
+    margin-right: 50%;
+    width: 50%;
   }
 
   .hr-line-last {
