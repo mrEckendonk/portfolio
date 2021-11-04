@@ -755,7 +755,6 @@ button:active {
     padding-right: 24px;
   }
 
-
   .btn2 {
     margin-left: 700px;
     max-height: 48px;
@@ -787,11 +786,11 @@ button:active {
     line-height: 88px;
   }
 
-    .about-me
-    .second {
+  .about-me
+  .second {
     font-size: 20px;
     line-height: 24px;
-    text-align: float;
+    text-align: left;
     padding-left: 80px;
     width: 566px;
     text-shadow: 1px 1px #1c1a19;
@@ -884,5 +883,4 @@ button:active {
   .hr-line-last {
     display: none;
   }
-
 }
