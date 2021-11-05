@@ -607,6 +607,31 @@ button:active {
   justify-content: center;
 }
 
+@keframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  33% {
+    transform: rotate(-10deg);
+  }
+
+  66% {
+    transform: rotate(10deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.social-container:hover {
+  animation-duration: 0.3s;
+  animation-name: rotate;
+  animation-timing-function: linear;
+}
+
+
 .hr-line-bottom {
   text-align: center;
   margin-top: 40px;
