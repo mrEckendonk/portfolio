@@ -607,7 +607,7 @@ button:active {
   justify-content: center;
 }
 
-@keframes rotate {
+@keyframes rotate {
   from {
     transform: rotate(0deg);
   }
