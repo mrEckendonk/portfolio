@@ -5,7 +5,6 @@ html {
 * *,
 *::before,
 *::after {
-  -webkit-box-sizing: inherit;
   margin: 0;
   padding: 0;
 }
@@ -644,10 +643,10 @@ button:active {
 
 @media screen and (min-width: 996px) {
   .top-bar-left {
-    height: 72px;
+    height: 20px;
     padding-left: 154px;
     padding-bottom: 26px;
-    padding-top: 26px;
+    /* padding-top: 26px; */
   }
 
   .my-name {
@@ -676,8 +675,8 @@ button:active {
     margin-left: auto;
     background-color: #3c3a39;
     padding-right: 24px;
-    padding-top: 24px;
-    height: 72px;
+    padding-top: 20px;
+    height: 38px;
   }
 
   .desktop-link {
@@ -862,14 +861,6 @@ button:active {
     display: block;
     margin-left: 690px;
     margin-top: -280px;
-  }
-
-  .contact-hr {
-    width: 648px;
-  }
-
-  .form-text {
-    width: 648px;
   }
 
   .about-btn4 {
