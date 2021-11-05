@@ -1,5 +1,6 @@
 html {
   -webkit-box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 * *,
@@ -98,7 +99,6 @@ h3 {
   color: #fff5e1;
   display: flex;
   align-items: flex-start;
-  padding-top: 120px;
   width: 327px;
 }
 
@@ -107,7 +107,6 @@ h3 {
   font-size: 16px;
   font-weight: 400;
   color: #fff;
-  margin-top: 12px;
   display: flex;
   padding-right: 24px;
 }
@@ -214,6 +213,11 @@ ul {
   grid-template-columns: 1fr;
   padding-top: 50px;
   align-items: end;
+  transition: all 0.2s ease-in-out;
+}
+
+.professional-art {
+  transform: scale(1.05);
 }
 
 .professional-art h2 {
@@ -476,6 +480,7 @@ button:hover {
   color: #f55800;
   background-color: #fff5e1;
   border: 1px solid #f55800;
+  transition: background-color 0.75s;
 }
 
 button:active {
@@ -596,6 +601,11 @@ button:active {
   font-size: 17px;
   font-weight: 700;
   line-height: 24px;
+}  
+
+.about-btn4:hover {
+  transition: background-color 2s ease-out;
+  background-color: #fff5e1;
 }
 
 .social-container {
@@ -721,7 +731,7 @@ button:active {
   .subtext {
     font-size: 32px;
     line-height: 44px;
-    padding-top: 148px;
+    padding-top: 24px;
     padding-left: 143px;
     width: 566px;
   }
@@ -893,7 +903,7 @@ button:active {
   .about-btn4 {
     display: block;
     margin-left: 24px;
-    border: 1px currentColor;
+    border: 1px solid #f55800;
   }
 
   .hr-line-bottom {
