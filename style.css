@@ -625,12 +625,15 @@ button:active {
   }
 }
 
-.social-container:hover {
+.gitlogo:hover,
+.linklogo:hover,
+.peacelogo:hover,
+.twlogo:hover,
+.mediumlogo:hover {
   animation-duration: 0.3s;
   animation-name: rotate;
   animation-timing-function: linear;
 }
-
 
 .hr-line-bottom {
   text-align: center;
