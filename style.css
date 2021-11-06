@@ -216,8 +216,9 @@ ul {
   transition: all 0.2s ease-in-out;
 }
 
-.professional-art {
+.professional-art:hover {
   transform: scale(1.05);
+  box-shadow: 0 1px rgba (0, 0, 0, 0, 0.2);
 }
 
 .professional-art h2 {
@@ -391,6 +392,7 @@ a:visited {
   color: #ff6b00;
   padding-top: 50px;
   line-height: 88px;
+  transition: all 0.2s ease-in-out;
 }
 
 .about-me .second {
@@ -617,7 +619,7 @@ button:active {
   justify-content: center;
 }
 
-@keyframes rotate {
+@keyframes wave {
   from {
     transform: rotate(0deg);
   }
@@ -641,7 +643,7 @@ button:active {
 .twlogo:hover,
 .mediumlogo:hover {
   animation-duration: 0.3s;
-  animation-name: rotate;
+  animation-name: wave;
   animation-timing-function: linear;
 }
 
