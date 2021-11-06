@@ -218,7 +218,6 @@ ul {
 
 .professional-art:hover {
   transform: scale(1.05);
-  box-shadow: 0 1px rgba (0, 0, 0, 0, 0.2);
 }
 
 .professional-art h2 {
@@ -603,7 +602,7 @@ button:active {
   font-size: 17px;
   font-weight: 700;
   line-height: 24px;
-}  
+}
 
 .about-btn4:hover {
   transition: background-color 2s ease-out;
