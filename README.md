@@ -21,7 +21,7 @@ Additional description about the project and its features.
 - CSS
 - VScode
 - Git & GitHub
-## Live Demo
+## Live Demo link
 
 [Live Demo Link](https://eckybrazzz.github.io/portfolio/)
 
