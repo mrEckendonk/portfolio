@@ -819,11 +819,11 @@ button:active {
   .first h2 {
     text-align: left;
     padding-top: 130px;
-    padding-left: 150px;
+    padding-left: 130px;
     line-height: 88px;
   }
 
-  .second .about-me {
+  .second {
     font-size: 20px;
     line-height: 24px;
     text-align: left;
