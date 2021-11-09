@@ -479,8 +479,8 @@ a:visited {
 }
 
 button:hover {
-  color: #f55800;
-  background-color: #fff5e1;
+  color: #fff5e1;
+  background-color: #f55800;
   border: 1px solid #f55800;
   transition: background-color 0.75s;
 }
@@ -736,7 +736,6 @@ button:active {
     padding-top: 24px;
     padding-left: 143px;
     width: 566px;
-    
   }
 
   .text {
