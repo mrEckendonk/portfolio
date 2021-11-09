@@ -479,14 +479,14 @@ a:visited {
 }
 
 button:hover {
-  color: #f55800;
-  background-color: #fffe1;
+  color: #0e0500;
+  background-color: #ff6b00;
   border: 1px solid #f55800;
-  /* transition: background-color 0.75s; */
+  transition: background-color 0.75s;
 }
 
 button:active {
-  color: #f4f1f0;
+  color: #0e0500;
   background-color: #e05304;
 }
 
