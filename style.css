@@ -134,7 +134,7 @@ ul {
   font-weight: 400;
   padding-top: 180px;
   padding-bottom: 24px;
-  color: #1c1a19;
+  color: #1c1a19 !important;
 }
 
 .line {
@@ -152,7 +152,7 @@ ul {
   width: 100%;
 }
 
-.text2 {
+.text2 h3 {
   display: flex;
   font-family: "Crete Round", serif;
   font-size: 32px;
@@ -160,6 +160,7 @@ ul {
   font-weight: 400;
   line-height: 44px;
   padding-top: 12px;
+  color: #1c1a19 !important;
 }
 
 .text3 {
@@ -735,6 +736,7 @@ button:active {
     padding-top: 24px;
     padding-left: 143px;
     width: 566px;
+    
   }
 
   .text {
