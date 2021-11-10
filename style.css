@@ -482,7 +482,6 @@ button:hover {
   color: #fff;
   background-color: #3c3a39;
   border: 1px solid #3c3a39;
-  /* transition: background-color 0.75s; */
 }
 
 button:active {
