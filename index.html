@@ -19,8 +19,13 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@400;500;700&family=Poppins&family=Roboto:wght@700&display=swap"
     rel="stylesheet" />
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
   <link rel="stylesheet" href="style.css" />
   <title>Mike's Portfolio</title>
+  
 </head>
 <header>
   <div class="top-bar">
@@ -28,7 +33,7 @@
       <a href="#"><span class="top-bar-left-name">Mike van Eckendonk</span></a>
     </div>
     <nav class="top-bar-icon">
-      <a href="#"><img src="assets/Union.svg" alt="Menu Mobile" /></a>
+      <a href="#"><img class="openMenu"  src="assets/Union.svg" alt="Menu Mobile" /></a>
     </nav>
     <nav class="top-bar-links">
       <ul class="desktop-nav">
@@ -44,6 +49,10 @@
         <li>
           <a href="#"><img src="assets/icon-mail.svg" alt="email icon" /></a>
         </li>
+        <div class="closeMenu">
+          <i class="fa fa-times"></i>
+
+        </div>
       </ul>
     </nav>
   </div>
@@ -362,6 +371,8 @@
   </ul>
 </div>
 <div class="hr-line-last"></div>
+
+<script src="index.js"> </script>
 </body>
 
 </html>
