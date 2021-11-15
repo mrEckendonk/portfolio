@@ -19,35 +19,42 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@400;500;700&family=Poppins&family=Roboto:wght@700&display=swap"
     rel="stylesheet" />
-     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
-    />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
   <link rel="stylesheet" href="style.css" />
   <title>Mike's Portfolio</title>
-  
+
 </head>
-<header>
+<body>
+  <div class="menu-mobile">
+    <img src="assets/close.svg">
+    <ul>
+      <li><a href="#work_section" class="nav_link">Portfolio</a></li>
+      <li><a href="#about_header" class="nav_link">About</a></li>
+      <li><a href="#form_header" class="nav_link">Contact</a></li>
+    </ul>
+  </div>
+
+  <header>
   <div class="top-bar">
     <div class="top-bar-left">
       <a href="#"><span class="top-bar-left-name">Mike van Eckendonk</span></a>
     </div>
     <nav class="top-bar-icon">
-      <a href="#"><img class="openMenu"  src="assets/Union.svg" alt="Menu Mobile" /></a>
+      <a href="#"><img class="openMenu" src="assets/Union.svg" alt="Menu Mobile" /></a>
     </nav>
     <nav class="top-bar-links">
       <ul class="desktop-nav">
         <li>
-          <a class="desktop-link" href="#">Portfolio</a>
+          <a class="desktop-link" href="#section_work">Portfolio</a>
         </li>
         <li>
-          <a class="desktop-link" href="#">About</a>
+          <a class="desktop-link" href="#about_header">About</a>
         </li>
         <li>
-          <a class="desktop-link" href="#">Contact</a>
+          <a class="desktop-link" href="#form_header">Contact</a>
         </li>
         <li>
-          <a href="#"><img src="assets/icon-mail.svg" alt="email icon" /></a>
+          <a href="mailto:mike.e@vecks.com.br" class="nav_link"><img src="assets/icon-mail.svg" alt="email icon" /></a>
         </li>
         <div class="closeMenu">
           <i class="fa fa-times"></i>
@@ -96,7 +103,7 @@
     </ul>
   </div>
 </section>
-<section class="section2">
+<section class="section2" id="work_section">
   <div>
     <h3 class="recent-work">My Recent Works</h3>
   </div>
@@ -280,7 +287,7 @@
 <!-- Start About me-->
 <div class="about-me">
   <div class="backgroundabout-me">
-    <div class="first">
+    <div class="first" id="about_header">
       <h2>About me</h2>
     </div>
     <div class="second">
@@ -331,7 +338,7 @@
 </div>
 <div class="contact-container">
   <div class="cnt-container"></div>
-  <div class="main-text">
+  <div class="main-text" id="form_header">
     <p>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
   </div>
   <form class="form-container" id="fs-frm" name="simple-contact-form" accept-charset="utf-8"
