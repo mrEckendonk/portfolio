@@ -25,8 +25,8 @@
 
 </head>
 <body>
-  <div class="menu-mobile">
-    <img src="assets/close.svg">
+  <div id="mobileMenu" class="hidden">
+    <img src="assets/Icon-Cancel.png">
     <ul>
       <li><a href="#work_section" class="nav_link">Portfolio</a></li>
       <li><a href="#about_header" class="nav_link">About</a></li>
@@ -40,7 +40,7 @@
       <a href="#"><span class="top-bar-left-name">Mike van Eckendonk</span></a>
     </div>
     <nav class="top-bar-icon">
-      <a href="#"><img class="openMenu" src="assets/Union.svg" alt="Menu Mobile" /></a>
+      <a href="#"><img class="openMenu" src="assets/Union.svg" onclick="displayMenu()" alt="Menu Mobile" /></a>
     </nav>
     <nav class="top-bar-links">
       <ul class="desktop-nav">
@@ -56,10 +56,10 @@
         <li>
           <a href="mailto:mike.e@vecks.com.br" class="nav_link"><img src="assets/icon-mail.svg" alt="email icon" /></a>
         </li>
-        <div class="closeMenu">
-          <i class="fa fa-times"></i>
-
-        </div>
+        <!-- <div class="closeMenu"> -->
+          <!-- <i class="fa fa-times"></i> -->
+<!--  -->
+        <!-- </div> -->
       </ul>
     </nav>
   </div>

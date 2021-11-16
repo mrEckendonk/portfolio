@@ -72,6 +72,27 @@ h3 {
   padding-left: 24px;
 }
 
+.hidden {
+  display: none;
+}
+
+.menu-mobile {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: #3c3a39
+  font-family: "Inter", sans-serif;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+#menu_close {
+  padding: 8px;
+  align-self: flex-end;
+}
+
 .background {
   background: url("assets/background_mobile.svg");
   background-repeat: no-repeat;
@@ -682,6 +703,13 @@ button:active {
 .desktop-nav {
   display: none;
 }
+
+/* .menu-mobile { */
+  /* position: fixed; */
+  /* background-color: #dfe1e6; */
+  /* width: 100vw; */
+  /* height: 100vh; */
+/* } */
 
 @media screen and (min-width: 996px) {
   .top-bar-left {

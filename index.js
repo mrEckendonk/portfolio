@@ -1,15 +1,15 @@
-const mainMenu = document.querySelector('.desktop-nav')
-const closeMenu = document.querySelector('.closeMenu')
-const openMenu = document.querySelector('.openMenu')
+const menu-hamburger = document.querySelector('.menu');
+const close = document.querySelectorAll('.menu-close');
+const mobileMenu = document.getElementById('mobileMenu');
 
-openMenu.addEventListener('click', show)
-closeMenu.addEventListener('click', close)
 
-function show() {
-  mainMenu.style.display = 'flex'
-  mainMenu.style.top = '0'
+function hideMenu() {
+ mobileMenu.classlist.replace('menu-mobile', 'hidden');
 }
 
-function close() {
-  mainMenu.style.top = '-100%'
+function displayMenu() {
+ mobileMenu.classlist.replace('hidden', 'menu-mobile');
+ console.log('working'); 
 }
+
+menu-hamburger.addEventListener('click', displayMenu);
