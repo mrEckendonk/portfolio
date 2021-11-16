@@ -76,21 +76,40 @@ h3 {
   display: none;
 }
 
-.menu-mobile {
-  display: flex;
+#mobileMenu {
+  padding: 30px;
   flex-flow: column nowrap;
-  width: 100vw;
+  width: calc(100vw - 30px);
   height: 100vh;
   position: fixed;
-  background-color: #3c3a39
+  background-color: #3c3a39;
   font-family: "Inter", sans-serif;
   font-size: 32px;
   line-height: 44px;
 }
 
-#menu_close {
-  padding: 8px;
-  align-self: flex-end;
+#mobileMenu ul li {
+  border-bottom: 1px solid #6f6c6b;
+  padding: 12px 16px;
+  margin-bottom: 15px;
+  margin-right: 40px;
+}
+
+#mobileMenu a {
+  color: #fff5e1;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.close_btn {
+  display: flex;
+  padding-right: 50px;
+  justify-content: flex-end;
+}
+
+.close_btn:hover,
+#hamburger:hover {
+  cursor: pointer;
 }
 
 .background {
@@ -145,8 +164,8 @@ ul {
   list-style-type: none;
 }
 
-.section2 {
-  padding-left: 24px;
+.works_section {
+  padding-left: 150px;
   padding-right: 24px;
 }
 
@@ -704,13 +723,6 @@ button:active {
   display: none;
 }
 
-/* .menu-mobile { */
-  /* position: fixed; */
-  /* background-color: #dfe1e6; */
-  /* width: 100vw; */
-  /* height: 100vh; */
-/* } */
-
 @media screen and (min-width: 996px) {
   .top-bar-left {
     height: 20px;
@@ -816,11 +828,6 @@ button:active {
 
   .space {
     padding-top: 200px;
-  }
-
-  .section2 {
-    padding-left: 167px;
-    padding-right: 24px;
   }
 
   .btn2 {

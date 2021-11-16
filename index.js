@@ -1,15 +1,15 @@
-const menu-hamburger = document.querySelector('.menu');
-const close = document.querySelectorAll('.menu-close');
+const menuHamburgerBtn = document.querySelector('#hamburger');
+const closeBtn = document.querySelector('.close_btn');
 const mobileMenu = document.getElementById('mobileMenu');
-
-
-function hideMenu() {
- mobileMenu.classlist.replace('menu-mobile', 'hidden');
-}
+const navLinks = document.querySelectorAll('.nav_link');
 
 function displayMenu() {
- mobileMenu.classlist.replace('hidden', 'menu-mobile');
- console.log('working'); 
+ mobileMenu.classList.toggle("hidden");
 }
 
-menu-hamburger.addEventListener('click', displayMenu);
+menuHamburgerBtn.addEventListener('click', displayMenu);
+closeBtn.addEventListener('click', displayMenu);
+
+for (let i = 0; i < navLinks.length; i++) {
+  navLinks[i].addEventListener('click', displayMenu);
+}
