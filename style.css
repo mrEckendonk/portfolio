@@ -139,6 +139,10 @@ a:visited {
   display: inline-block;
 }
 
+.pro_btn a {
+  color: #3c3a39;
+}
+
 #mobileMenu a {
   color: #fff5e1;
   font-weight: 700;
@@ -1078,10 +1082,6 @@ button:active {
   padding: 5px;
 }
 
-.pro_btn a {
-  color: #3c3a39;
-}
-
 .popup-content img {
   padding-top: 0;
 }
@@ -1092,7 +1092,7 @@ button:active {
   font-style: normal;
   font-weight: 600;
   line-height: 16px;
-  letter-spacing: 0em;
+  /* letter-spacing: 0em; */
   text-align: left;
   border: 1px solid #ff6b00;
   background: #ff6b00;
