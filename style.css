@@ -135,6 +135,10 @@ a:visited {
   display: inline-block;
 }
 
+.professional-art ul li {
+  padding-right: 20px;
+}
+
 #mobileMenu a {
   color: #fff5e1;
   font-weight: 700;
@@ -385,8 +389,6 @@ ul {
   left: 0;
   right: 0;
 }
-
-
 
 .btn {
   justify-self: start;
