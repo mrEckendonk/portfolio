@@ -121,6 +121,10 @@ h3 {
   line-height: 44px;
 }
 
+.professional-art ul li {
+  padding-right: 20px;
+}
+
 #mobileMenu ul li {
   border-bottom: 1px solid #6f6c6b;
   padding: 12px 16px;
@@ -133,10 +137,6 @@ a:visited {
   text-decoration: none;
   text-align: center;
   display: inline-block;
-}
-
-.professional-art ul li {
-  padding-right: 20px;
 }
 
 #mobileMenu a {
