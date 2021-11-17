@@ -293,6 +293,12 @@ ul {
   flex-wrap: wrap;
 }
 
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: gray transparent;
+}
+
 *::-webkit-scrollbar-track {
   background: transparent;
 }
@@ -307,12 +313,6 @@ ul {
 /* Works on Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
   width: 6px;
-}
-
-/* Works on Firefox */
-* {
-  scrollbar-width: thin;
-  scrollbar-color: gray transparent;
 }
 
 /* professional section */
@@ -1037,7 +1037,6 @@ button:active {
   font-style: normal;
   font-weight: 700;
   line-height: 44px;
-  letter-spacing: 0em;
   text-align: left;
   margin: 20px 0;
 }
@@ -1076,9 +1075,8 @@ button:active {
   font-style: normal;
   font-weight: 600;
   line-height: 16px;
-  letter-spacing: 0em;
   text-align: left;
-  border: 2px solid rgba(100,100,100,0.25);
+  border: 2px solid rgba(100, 100, 100, 0.25);
   padding: 5px;
 }
 
@@ -1092,7 +1090,6 @@ button:active {
   font-style: normal;
   font-weight: 600;
   line-height: 16px;
-  /* letter-spacing: 0em; */
   text-align: left;
   border: 1px solid #ff6b00;
   background: #ff6b00;
