@@ -420,7 +420,6 @@ a:visited {
 .about-me {
   display: flex;
   flex-direction: column;
-  width: 100%;
   background: #1c1a19;
   margin-top: 110px;
 }
