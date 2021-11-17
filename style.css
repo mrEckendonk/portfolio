@@ -289,6 +289,10 @@ ul {
   flex-wrap: wrap;
 }
 
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
 /* professional section */
 .professional-art > * {
   display: block;
@@ -1058,7 +1062,7 @@ button:active {
 }
 
 .pro_btn a {
-  color: #3C3A39;
+  color: #3c3a39;
 }
 
 .popup-content img {
@@ -1073,8 +1077,8 @@ button:active {
   line-height: 16px;
   letter-spacing: 0em;
   text-align: left;
-  border: 1px solid #FF6B00;
-  background: #FF6B00;
+  border: 1px solid #ff6b00;
+  background: #ff6b00;
   color: #fff;
   padding: 10px 20px;
   display: flex;
@@ -1103,12 +1107,8 @@ button:active {
   width: 6px;
 }
 
-*::-webkit-scrollbar-track {
-  background: transparent;
-}
-
 *::-webkit-scrollbar-thumb {
-  background-color: rgba(100,100,100, 0.5);
+  background-color: rgba(100, 100, 100, 0.5);
   border-radius: 30px;
   border: 2px solid transparent;
   height: 20px;

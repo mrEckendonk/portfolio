@@ -17,7 +17,7 @@ const cards = [
     links: {
       live: 'https://google.com',
       source: 'https://google.com',
-    }
+    },
   },
   {
     title: 'Website Protfolio',
@@ -37,7 +37,7 @@ const cards = [
     links: {
       live: 'https://google.com',
       source: 'https://google.com',
-    }
+    },
   },
   {
     title: 'Data Dashboard Healthcare',
@@ -76,34 +76,6 @@ function closePopup() {
 }
 
 function showCards(i) {
-  /*
-  <div class="professional-art img1">
-    <h2 class="hide-desktop1">Profesional Art Printing Data</h2>
-    <p class="hide-desktop2">
-      A daily selection of privately personalized reads; no accounts or
-      sign-ups required. has been the industry's standard
-    </p>
-    <nav class="professional-navigation">
-      <ul class="profesional-container">
-        <li class="professional-btn1">
-          <a href="#">html</a>
-        </li>
-        <li class="professional-btn1">
-          <a href="#">bootstrap</a>
-        </li>
-        <li class="professional-btn1">
-          <a href="#">Ruby</a>
-        </li>
-      </ul>
-    </nav>
-    <button
-      type="button"
-      class="about-btn1 see_proj"
-    >
-      See Project
-    </button>
-  </div>
-  */
   const professionalArt = document.createElement('div');
   professionalArt.classList.add('professional-art');
   professionalArt.classList.add(cards[i].img);
