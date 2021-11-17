@@ -27,7 +27,6 @@
     />
     <link rel="stylesheet" href="style.css" />
     <!-- <link rel="stylesheet" href="debug.css" /> -->
-
     <title>Mike's Portfolio</title>
   </head>
 
@@ -141,7 +140,6 @@
         </ul>
       </div>
     </section>
-
 
     <section class="works_section" id="works_section">
       <div>
@@ -349,6 +347,60 @@
         </div>
       </div>
 
+      <!-- Popup window -->
+      <div class="popup hidden">
+        <div class="popup-content">
+          <header class="popup-header">
+            <h2>Multi-Post Stories</h2>
+            <div class="popup-close_btn">
+              <img src="assets/Icon-Cancel.png" alt="Cancel Button" />
+            </div>
+          </header>
+          <nav class="pro-nav">
+            <ul class="pro-cont">
+              <li class="pro_btn">
+                <a href="#">html</a>
+              </li>
+              <li class="pro_btn">
+                <a href="#">bootstrap</a>
+              </li>
+              <li class="pro_btn">
+                <a href="#">Ruby</a>
+              </li>
+            </ul>
+          </nav>
+          <img src="assets/joga_2x.png" alt="project image" class="joga" />
+          <div class="side_section">
+            <div class="text3">
+              <p>
+                A daily selection of privately personalized reads; no accounts or
+                sign-ups required. has been the industry's standard dummy text ever
+                since the 1500s, when an unknown printer took a standard dummy text.
+              </p>
+            </div>
+            <div class="btns">
+              <button
+                type="button"
+                class="see_btn"
+                onclick="window.location.href='#';"
+              >
+                See Live
+                <span>
+                  <i class="fa fa-github" aria-hidden="true"></i>
+                </span>
+              </button>
+              <button
+                type="button"
+                class="see_btn"
+                onclick="window.location.href='#';"
+              >
+                See Source
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- Start About me -->
       <div id="about_section" class="about-me">
         <div class="backgroundabout-me">
@@ -402,6 +454,7 @@
         </div>
       </div>
     </section>
+
     <div id="contact_section" class="contact-container">
       <div class="cnt-container"></div>
       <div class="main-text">
@@ -495,6 +548,7 @@
       </ul>
     </div>
     <div class="hr-line-last"></div>
-    <script src="index.js"></script>
+
+    <script src="index.js" defer></script>
   </body>
 </html>
