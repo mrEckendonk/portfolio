@@ -111,7 +111,7 @@ function showCards(i) {
   professionalContainer.appendChild(professionalBtn3);
 
   const professionalBtn1Link = document.createElement('a');
-  professionalBtn1Link.innerText = cards[i].tech[0];
+  {professionalBtn1Link.innerText = cards[i].tech[0]};
   professionalBtn1.appendChild(professionalBtn1Link);
 
   const professionalBtn2Link = document.createElement('a');
