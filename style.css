@@ -293,6 +293,18 @@ ul {
   background: transparent;
 }
 
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(100, 100, 100, 0.5);
+  border-radius: 30px;
+  border: 2px solid transparent;
+  height: 20px;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 6px;
+}
+
 /* professional section */
 .professional-art > * {
   display: block;
@@ -1102,14 +1114,4 @@ button:active {
   scrollbar-color: gray transparent;
 }
 
-/* Works on Chrome, Edge, and Safari */
-*::-webkit-scrollbar {
-  width: 6px;
-}
 
-*::-webkit-scrollbar-thumb {
-  background-color: rgba(100, 100, 100, 0.5);
-  border-radius: 30px;
-  border: 2px solid transparent;
-  height: 20px;
-}
