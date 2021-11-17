@@ -165,7 +165,7 @@ ul {
 }
 
 .works_section {
-  padding-left: 150px;
+  padding-left: 24px;
   padding-right: 24px;
 }
 
@@ -947,5 +947,9 @@ button:active {
 
   .hr-line-last {
     display: none;
+  }
+
+  .works_section {
+    padding-left: 150px;
   }
 }
