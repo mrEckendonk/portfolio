@@ -7,7 +7,7 @@ const cards = [
     links: {
       live: 'https://google.com',
       source: 'https://google.com',
-    }
+    },
   },
   {
     title: 'Data Dashboard Healthcare',
@@ -27,7 +27,7 @@ const cards = [
     links: {
       live: 'https://google.com',
       source: 'https://google.com',
-    }
+    },
   },
   {
     title: 'Professional Art Printing Data',
@@ -47,7 +47,7 @@ const cards = [
     links: {
       live: 'https://google.com',
       source: 'https://google.com',
-    }
+    },
   },
   {
     title: 'Website Protfolio',
@@ -57,7 +57,7 @@ const cards = [
     links: {
       live: 'https://google.com',
       source: 'https://google.com',
-    }
+    },
   },
 ];
 const menuHamburgerBtn = document.querySelector('#hamburger');
@@ -143,11 +143,11 @@ function showCards(i) {
   professionalBtn1.appendChild(professionalBtn1Link);
 
   const professionalBtn2Link = document.createElement('a');
-  professionalBtn2Link.innerText = cards[i].tech[1];
+  professionalBtn2Link.innerText = cards[ i ].tech[ 1 ];
   professionalBtn2.appendChild(professionalBtn2Link);
 
   const professionalBtn3Link = document.createElement('a');
-  professionalBtn3Link.innerText = cards[i].tech[2];
+  professionalBtn3Link.innerText = cards[ i ].tech[ 2 ];
   professionalBtn3.appendChild(professionalBtn3Link);
 
   const seeProjBtn = document.createElement('button');
@@ -161,9 +161,7 @@ function showCards(i) {
 
 function displayPopup() {
   popupMenu.classList.toggle('hidden');
-
 }
-
 
 menuHamburgerBtn.addEventListener('click', displayMenu);
 closeBtn.addEventListener('click', displayMenu);
@@ -172,7 +170,6 @@ popupCloseBtn.addEventListener('click', closePopup);
 for (let i = 0; i < navLinks.length; i += 1) {
   navLinks[i].addEventListener('click', displayMenu);
 }
-
 
 for (let i = 0; i < cards.length; i += 1) {
   showCards(i);
