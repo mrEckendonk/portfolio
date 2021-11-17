@@ -87,6 +87,28 @@ h3 {
   color: white;
 }
 
+.professional-btn1 a {
+  font-family: Inter, sans-serif;
+  font-size: 15px;
+  padding: 10px;
+  margin-right: 12px;
+  margin-left: -15px;
+  background: rgba(255, 255, 255, 0.25);
+  color: white;
+  float: left;
+}
+
+.professional-art p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: white;
+  margin-right: 40px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
 #mobileMenu {
   padding: 30px;
   flex-flow: column nowrap;
@@ -292,17 +314,6 @@ ul {
   margin-right: 24px;
 }
 
-.professional-art p {
-  font-family: "Inter", sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 24px;
-  color: white;
-  margin-right: 40px;
-  padding-left: 24px;
-  padding-right: 24px;
-}
-
 .professional-art .professional-navigation {
   padding: 0 25px;
   padding-right: 0;
@@ -375,16 +386,7 @@ ul {
   right: 0;
 }
 
-.professional-btn1 a {
-  font-family: Inter, sans-serif;
-  font-size: 15px;
-  padding: 10px;
-  margin-right: 12px;
-  margin-left: -15px;
-  background: rgba(255, 255, 255, 0.25);
-  color: white;
-  float: left;
-}
+
 
 .btn {
   justify-self: start;
