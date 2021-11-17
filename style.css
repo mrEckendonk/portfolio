@@ -73,7 +73,7 @@ h3 {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 .professional-art .professional-btn {
@@ -960,6 +960,16 @@ button:active {
   .form-text {
     width: 18vw;
   }
+
+  .popup .text3 {
+    margin-left: 0;
+    width: 90%;
+  }
+
+  .middle_section {
+    display: flex;
+    gap: 20px;
+  }
 }
 
 
@@ -1067,6 +1077,19 @@ button:active {
   background: #FF6B00;
   color: #fff;
   padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.btns {
+  display: flex;
+  gap: 10px;
+}
+
+.side_section .text3 {
+  margin-bottom: 20px;
 }
 
 /* Works on Firefox */
