@@ -4,12 +4,12 @@ const mobileMenu = document.getElementById('mobileMenu');
 const navLinks = document.querySelectorAll('.nav_link');
 
 function displayMenu() {
- mobileMenu.classList.toggle("hidden");
+  mobileMenu.classList.toggle('hidden');
 }
 
 menuHamburgerBtn.addEventListener('click', displayMenu);
 closeBtn.addEventListener('click', displayMenu);
 
-for (let i = 0; i < navLinks.length; i++) {
+for (let i = 0; i < navLinks.length; i+=1) {
   navLinks[i].addEventListener('click', displayMenu);
 }
