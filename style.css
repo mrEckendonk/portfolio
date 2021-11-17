@@ -190,7 +190,7 @@ ul {
 
 .joga {
   padding-top: 50px;
-  max-width: 684px;
+  max-width: 536px;
   width: 100%;
 }
 
@@ -198,10 +198,10 @@ ul {
   display: flex;
   font-family: "Crete Round", serif;
   font-size: 32px;
-  width: 295px;
+  width: 255px;
   font-weight: 400;
   line-height: 44px;
-  padding-top: 12px;
+  padding-top: 92px;
   color: #1c1a19 !important;
 }
 
@@ -251,12 +251,14 @@ ul {
 }
 
 .professional-art {
+  position: relative;
   display: grid;
   grid-template-rows: 3fr 2fr 1fr 1fr;
   grid-template-columns: 1fr;
   padding-top: 50px;
   align-items: end;
   transition: all 0.2s ease-in-out;
+  width: 100%;
 }
 
 .professional-art:hover {
@@ -285,6 +287,7 @@ ul {
 
 .professional-art .professional-navigation {
   padding: 0 25px;
+  padding-right: 0;
   align-self: center;
 }
 
@@ -310,7 +313,7 @@ ul {
   flex-basis: 369px;
   margin-right: 24px;
   margin-bottom: 24px;
-  min-width: 330px;
+  min-width: 30%;
 }
 
 .img2 {
@@ -320,7 +323,7 @@ ul {
   flex-basis: 369px;
   margin-right: 24px;
   margin-bottom: 24px;
-  min-width: 330px;
+  min-width: 30%;
 }
 
 .img3 {
@@ -330,8 +333,7 @@ ul {
   flex-basis: 369px;
   margin-right: 24px;
   margin-bottom: 24px;
-  min-width: 326px;
-  min-width: 330px;
+  min-width: 30%;
 }
 
 .img4 {
@@ -341,7 +343,7 @@ ul {
   flex-basis: 369px;
   margin-right: 24px;
   margin-bottom: 24px;
-  min-width: 330px;
+  min-width: 30%;
 }
 
 .profesional-container {
@@ -360,6 +362,10 @@ ul {
   border: 1px solid #ff6b00;
   color: #fff;
   background: #ff6b00;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .professional-btn1 a {
@@ -584,7 +590,6 @@ button:active {
   border: none;
   outline: none;
   margin-left: 40px;
-  margin-right: 40px;
   font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -601,7 +606,6 @@ button:active {
   outline: none;
   margin-top: 39px;
   margin-left: 40px;
-  margin-right: 40px;
   font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -623,10 +627,9 @@ button:active {
 
 .form-text {
   margin-top: 24px;
-  width: 327px;
+  width: 13vw;
   height: 114px;
   margin-left: 24px;
-  margin-right: 24px;
   background: #fbf8f7;
   padding: 12px;
   border: none;
@@ -698,6 +701,7 @@ button:active {
 }
 
 .social-icons-bottom {
+  display: flex;
   color: #505f79;
   padding-top: 24px;
   padding-bottom: 20px;
@@ -810,15 +814,15 @@ button:active {
 
   .text2 {
     margin-top: -460px;
-    margin-left: 700px;
+    margin-left: 50vw;
   }
 
   .text3 {
-    margin-left: 700px;
+    margin-left: 50vw;
   }
 
   .link-tag {
-    margin-left: 700px;
+    margin-left: 50vw;
   }
 
   .space {
@@ -826,7 +830,7 @@ button:active {
   }
 
   .btn2 {
-    margin-left: 700px;
+    margin-left: 50vw;
     max-height: 48px;
   }
 
@@ -887,21 +891,21 @@ button:active {
   }
 
   .skilled-2 {
-    margin-left: 400px;
+    margin-left: 30vw;
     margin-top: -220px;
   }
 
   .inner-list2 {
-    margin-left: 410px;
+    margin-left: 30vw;
   }
 
   .skilled-3 {
-    margin-left: 800px;
+    margin-left: 60vw;
     margin-top: -260px;
   }
 
   .inner-list3 {
-    margin-left: 810px;
+    margin-left: 60vw;
   }
 
   .cnt-container {
@@ -948,4 +952,9 @@ button:active {
   .works_section {
     padding-left: 150px;
   }
+
+  .professional-art {
+    width: 30%
+  }
+
 }
