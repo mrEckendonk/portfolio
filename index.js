@@ -82,39 +82,12 @@ function closeBubble() {
 function displayMenu() {
   mobileMenu.classList.toggle('hidden');
 }
+
 function closePopup() {
   popupMenu.classList.toggle('hidden');
 }
 
 function showCards(i) {
-  /*
-  <div class="professional-art img1">
-    <h2 class="hide-desktop1">Profesional Art Printing Data</h2>
-    <p class="hide-desktop2">
-      A daily selection of privately personalized reads; no accounts or
-      sign-ups required. has been the industry's standard
-    </p>
-    <nav class="professional-navigation">
-      <ul class="profesional-container">
-        <li class="professional-btn1">
-          <a href="#">html</a>
-        </li>
-        <li class="professional-btn1">
-          <a href="#">bootstrap</a>
-        </li>
-        <li class="professional-btn1">
-          <a href="#">Ruby</a>
-        </li>
-      </ul>
-    </nav>
-    <button
-      type="button"
-      class="about-btn1 see_proj"
-    >
-      See Project
-    </button>
-  </div>
-  */
   const professionalArt = document.createElement('div');
   professionalArt.classList.add('professional-art');
   professionalArt.classList.add(cards[i].img);
@@ -148,18 +121,11 @@ function showCards(i) {
   const professionalBtn3 = document.createElement('li');
   professionalBtn3.classList.add('professional-btn1');
   professionalContainer.appendChild(professionalBtn3);
-
-  const professionalBtn1Link = document.createElement('a');
-  professionalBtn1Link.innerText = cards[i].tech[0];
-  professionalBtn1.appendChild(professionalBtn1Link);
-
-  const professionalBtn2Link = document.createElement('a');
-  professionalBtn2Link.innerText = cards[i].tech[1];
-  professionalBtn2.appendChild(professionalBtn2Link);
-
-  const professionalBtn3Link = document.createElement('a');
-  professionalBtn3Link.innerText = cards[i].tech[2];
-  professionalBtn3.appendChild(professionalBtn3Link);
+  for (let a = 0; a < cards[i].tech.length; a += 1) {
+    const professionalBtn1Link = document.createElement('a');
+    professionalBtn1Link.innerText = cards[i].tech[a];
+    professionalBtn1.appendChild(professionalBtn1Link);
+  }
 
   const seeProjBtn = document.createElement('button');
   seeProjBtn.classList.add('about-btn1');
@@ -172,19 +138,17 @@ function showCards(i) {
 
 function displayPopup() {
   popupMenu.classList.toggle('hidden');
-
 }
-
 
 menuHamburgerBtn.addEventListener('click', displayMenu);
 closeBtn.addEventListener('click', displayMenu);
 popupCloseBtn.addEventListener('click', closePopup);
 bubbleCloseBtn.addEventListener('click', closeBubble);
 
+
 for (let i = 0; i < navLinks.length; i += 1) {
   navLinks[i].addEventListener('click', displayMenu);
 }
-
 
 for (let i = 0; i < cards.length; i += 1) {
   showCards(i);
