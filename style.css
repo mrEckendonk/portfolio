@@ -73,7 +73,7 @@ h3 {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 .professional-art .professional-btn {
@@ -837,7 +837,8 @@ button:active {
   .container-section1 {
     display: flex;
     flex-direction: row;
-    padding-left: 150px;
+    flex-wrap: wrap;
+    padding-left: 120px;
   }
 
   .container-section2 {
@@ -960,6 +961,16 @@ button:active {
   .form-text {
     width: 18vw;
   }
+
+  .popup .text3 {
+    margin-left: 0;
+    width: 90%;
+  }
+
+  .middle_section {
+    display: flex;
+    gap: 20px;
+  }
 }
 
 
@@ -1067,6 +1078,19 @@ button:active {
   background: #FF6B00;
   color: #fff;
   padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.btns {
+  display: flex;
+  gap: 10px;
+}
+
+.side_section .text3 {
+  margin-bottom: 20px;
 }
 
 /* Works on Firefox */
@@ -1089,4 +1113,43 @@ button:active {
   border-radius: 30px;
   border: 2px solid transparent;
   height: 20px;
+}
+
+form {
+  position: relative;
+}
+
+.bubble_error {
+  position: absolute;
+  bottom: 0;
+  background: #ff4800ec;
+  padding: 10px;
+  color: #fff;
+  min-width: 300px;
+  border-radius: 30px;
+  margin: 0 auto;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  animation: slide 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.bubble_content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 10px;
+}
+
+.bubble_content img {
+  filter: brightness(100);
+}
+
+@keyframes slide {
+  0% {
+    bottom: -100px;
+  }
+  100% {
+    bottom: 0px;
+  }
 }
