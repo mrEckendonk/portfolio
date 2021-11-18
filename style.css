@@ -109,6 +109,30 @@ h3 {
   padding-right: 24px;
 }
 
+.profesional-container {
+  display: flex;
+  margin: 5px 16px 16px 16px;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+}
+
+.pro_btn a {
+  color: #3c3a39;
+}
+
+.profesional-container > li {
+  display: flex;
+}
+
+.profesional-container > li > a {
+  margin-left: 5%;
+}
+
 #mobileMenu {
   padding: 30px;
   flex-flow: column nowrap;
@@ -130,17 +154,6 @@ h3 {
   padding: 12px 16px;
   margin-bottom: 15px;
   margin-right: 40px;
-}
-
-a:link,
-a:visited {
-  text-decoration: none;
-  text-align: center;
-  display: inline-block;
-}
-
-.pro_btn a {
-  color: #3c3a39;
 }
 
 #mobileMenu a {
@@ -390,16 +403,6 @@ ul {
   min-width: 30%;
 }
 
-.profesional-container {
-  display: flex;
-  margin: 5px 16px 16px 16px;
-}
-.profesional-container > li {
-  display: flex;
-}
-.profesional-container > li >a{
-  margin-left: 5%
-}
 .about-btn1 {
   font-family: "Inter", sans-serif;
   font-weight: 900;
