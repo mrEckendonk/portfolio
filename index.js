@@ -115,14 +115,6 @@ function showCards(i) {
     professionalBtn1.appendChild(professionalBtn1Link);
   }
 
-  /*  const professionalBtn2Link = document.createElement('a');
-  professionalBtn2Link.innerText = cards[i].tech[1];
-  professionalBtn2.appendChild(professionalBtn2Link);
-
-  const professionalBtn3Link = document.createElement('a');
-  professionalBtn3Link.innerText = 'cards[i].tech[2]';
-  professionalBtn3.appendChild(professionalBtn3Link);
-*/
   const seeProjBtn = document.createElement('button');
   seeProjBtn.classList.add('about-btn1');
   seeProjBtn.classList.add('see_proj');
