@@ -394,7 +394,12 @@ ul {
   display: flex;
   margin: 5px 16px 16px 16px;
 }
-
+.profesional-container > li {
+  display: flex;
+}
+.profesional-container > li >a{
+  margin-left: 5%
+}
 .about-btn1 {
   font-family: "Inter", sans-serif;
   font-weight: 900;
@@ -863,6 +868,7 @@ button:active {
   .container-section1 {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     padding-left: 150px;
   }
 

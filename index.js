@@ -109,19 +109,20 @@ function showCards(i) {
   const professionalBtn3 = document.createElement('li');
   professionalBtn3.classList.add('professional-btn1');
   professionalContainer.appendChild(professionalBtn3);
+  for (let a = 0; a < cards[i].tech.length; a += 1) {
+    const professionalBtn1Link = document.createElement('a');
+    professionalBtn1Link.innerText = cards[i].tech[a];
+    professionalBtn1.appendChild(professionalBtn1Link);
+  }
 
-  const professionalBtn1Link = document.createElement('a');
-  professionalBtn1Link.innerText = 'cards[i].tech[0]';
-  professionalBtn1.appendChild(professionalBtn1Link);
-
-  const professionalBtn2Link = document.createElement('a');
-  professionalBtn2Link.innerText = 'cards[i].tech[1]';
+  /*  const professionalBtn2Link = document.createElement('a');
+  professionalBtn2Link.innerText = cards[i].tech[1];
   professionalBtn2.appendChild(professionalBtn2Link);
 
   const professionalBtn3Link = document.createElement('a');
   professionalBtn3Link.innerText = 'cards[i].tech[2]';
   professionalBtn3.appendChild(professionalBtn3Link);
-
+*/
   const seeProjBtn = document.createElement('button');
   seeProjBtn.classList.add('about-btn1');
   seeProjBtn.classList.add('see_proj');
