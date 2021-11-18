@@ -67,6 +67,9 @@ const popupCloseBtn = document.querySelector('.popup-close_btn');
 const mobileMenu = document.getElementById('mobileMenu');
 const navLinks = document.querySelectorAll('.nav_link');
 const proArtContainer = document.querySelector('.container-section1');
+const form = document.querySelector('#contact_form');
+const email = document.querySelector('#email');
+const warning = document.querySelector('small');
 
 function displayMenu() {
   mobileMenu.classList.toggle('hidden');
