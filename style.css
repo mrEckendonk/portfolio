@@ -73,7 +73,7 @@ h3 {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 .professional-art .professional-btn {
@@ -109,6 +109,30 @@ h3 {
   padding-right: 24px;
 }
 
+.profesional-container {
+  display: flex;
+  margin: 5px 16px 16px 16px;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+}
+
+.pro_btn a {
+  color: #3c3a39;
+}
+
+.profesional-container > li {
+  display: flex;
+}
+
+.profesional-container > li > a {
+  margin-left: 5%;
+}
+
 #mobileMenu {
   padding: 30px;
   flex-flow: column nowrap;
@@ -130,13 +154,6 @@ h3 {
   padding: 12px 16px;
   margin-bottom: 15px;
   margin-right: 40px;
-}
-
-a:link,
-a:visited {
-  text-decoration: none;
-  text-align: center;
-  display: inline-block;
 }
 
 #mobileMenu a {
@@ -289,6 +306,28 @@ ul {
   flex-wrap: wrap;
 }
 
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: gray transparent;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(100, 100, 100, 0.5);
+  border-radius: 30px;
+  border: 2px solid transparent;
+  height: 20px;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 6px;
+}
+
 /* professional section */
 .professional-art > * {
   display: block;
@@ -362,11 +401,6 @@ ul {
   margin-right: 24px;
   margin-bottom: 24px;
   min-width: 30%;
-}
-
-.profesional-container {
-  display: flex;
-  margin: 5px 16px 16px 16px;
 }
 
 .about-btn1 {
@@ -837,6 +871,7 @@ button:active {
   .container-section1 {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     padding-left: 150px;
   }
 
@@ -960,8 +995,17 @@ button:active {
   .form-text {
     width: 18vw;
   }
-}
 
+  .popup .text3 {
+    margin-left: 0;
+    width: 90%;
+  }
+
+  .middle_section {
+    display: flex;
+    gap: 20px;
+  }
+}
 
 .popup {
   position: fixed;
@@ -997,12 +1041,11 @@ button:active {
 }
 
 .popup-header h2 {
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
   line-height: 44px;
-  letter-spacing: 0em;
   text-align: left;
   margin: 20px 0;
 }
@@ -1036,19 +1079,14 @@ button:active {
 }
 
 .pro_btn {
-  font-family: Poppins;
+  font-family: "Poppins", sans-serif;
   font-size: 13px;
   font-style: normal;
   font-weight: 600;
   line-height: 16px;
-  letter-spacing: 0em;
   text-align: left;
-  border: 2px solid rgba(100,100,100,0.25);
+  border: 2px solid rgba(100, 100, 100, 0.25);
   padding: 5px;
-}
-
-.pro_btn a {
-  color: #3C3A39;
 }
 
 .popup-content img {
@@ -1056,37 +1094,27 @@ button:active {
 }
 
 .see_btn {
-  font-family: Poppins;
+  font-family: "Poppins", sans-serif;
   font-size: 13px;
   font-style: normal;
   font-weight: 600;
   line-height: 16px;
-  letter-spacing: 0em;
   text-align: left;
-  border: 1px solid #FF6B00;
-  background: #FF6B00;
+  border: 1px solid #ff6b00;
+  background: #ff6b00;
   color: #fff;
   padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
 }
 
-/* Works on Firefox */
-* {
-  scrollbar-width: thin;
-  scrollbar-color: gray transparent;
+.btns {
+  display: flex;
+  gap: 10px;
 }
 
-/* Works on Chrome, Edge, and Safari */
-*::-webkit-scrollbar {
-  width: 6px;
-}
-
-*::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-*::-webkit-scrollbar-thumb {
-  background-color: rgba(100,100,100, 0.5);
-  border-radius: 30px;
-  border: 2px solid transparent;
-  height: 20px;
+.side_section .text3 {
+  margin-bottom: 20px;
 }
