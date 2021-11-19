@@ -187,3 +187,14 @@ const saveDate = () => {
   };
   localStorage.setItem('formData', JSON.stringify(formData));
 };
+
+username.addEventListener('change', saveDate);
+email.addEventListener('change', saveDate);
+message.addEventListener('change', saveDate);
+
+window.addEventListener('load', () => {
+  const formData = JSON.parse(localStorage.getItem('formData'));
+  username.value = formData.name;
+  email.value = formData.email;
+  message.value = formData.msg;
+});
