@@ -68,9 +68,21 @@ const mobileMenu = document.getElementById('mobileMenu');
 const navLinks = document.querySelectorAll('.nav_link');
 const proArtContainer = document.querySelector('.container-section1');
 
+const form = document.getElementById('fs-frm');
+const email = document.querySelector('#email-address');
+const bubbleCloseBtn = document.querySelector('.bubble_close');
+const bubbleContent = document.querySelector('.bubble_content');
+const msgContent = 'The content of the email field has to be in lower case.';
+const bubble = document.querySelector('.bubble_error');
+
+function closeBubble() {
+  bubble.classList.toggle('hidden');
+}
+
 function displayMenu() {
   mobileMenu.classList.toggle('hidden');
 }
+
 function closePopup() {
   popupMenu.classList.toggle('hidden');
 }
@@ -131,6 +143,7 @@ function displayPopup() {
 menuHamburgerBtn.addEventListener('click', displayMenu);
 closeBtn.addEventListener('click', displayMenu);
 popupCloseBtn.addEventListener('click', closePopup);
+bubbleCloseBtn.addEventListener('click', closeBubble);
 
 for (let i = 0; i < navLinks.length; i += 1) {
   navLinks[i].addEventListener('click', displayMenu);
@@ -144,3 +157,20 @@ const seeProjList = document.querySelectorAll('.see_proj');
 for (let i = 0; i < seeProjList.length; i += 1) {
   seeProjList[i].addEventListener('click', displayPopup);
 }
+
+const checkLower = (input) => {
+  if (input === input.toLowerCase()) {
+    closeBubble();
+    email.innerText = '';
+    return true;
+  }
+  bubbleContent.firstChild.innerText = msgContent;
+  closeBubble();
+  return false;
+};
+
+form.addEventListener('submit', (event) => {
+  if (!checkLower(email.value)) {
+    event.preventDefault();
+  }
+});

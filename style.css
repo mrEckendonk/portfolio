@@ -872,7 +872,7 @@ button:active {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding-left: 150px;
+    padding-left: 120px;
   }
 
   .container-section2 {
@@ -1117,4 +1117,44 @@ button:active {
 
 .side_section .text3 {
   margin-bottom: 20px;
+}
+
+form {
+  position: relative;
+}
+
+.bubble_error {
+  position: absolute;
+  bottom: 0;
+  background: #ff4800ec;
+  padding: 10px;
+  color: #fff;
+  min-width: 300px;
+  border-radius: 30px;
+  margin: 0 auto;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  animation: slide 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.bubble_content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 10px;
+}
+
+.bubble_content img {
+  filter: brightness(100);
+}
+
+@keyframes slide {
+  0% {
+    bottom: -100px;
+  }
+
+  100% {
+    bottom: 0;
+  }
 }
