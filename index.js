@@ -174,3 +174,16 @@ form.addEventListener('submit', (event) => {
     event.preventDefault();
   }
 });
+
+
+const username = form.querySelector('#full-name');
+const message = form.querySelector('#message');
+
+const saveDate = () => {
+  const formData = {
+    name: username.value,
+    email: email.value,
+    msg: message.value,
+  };
+  localStorage.setItem('formData', JSON.stringify(formData));
+};
