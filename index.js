@@ -7,7 +7,7 @@ const cards = [
     links: {
       live: 'https://google.com',
       source: 'https://google.com',
-    }
+    },
   },
   {
     title: 'Data Dashboard Healthcare',
@@ -17,7 +17,7 @@ const cards = [
     links: {
       live: 'https://google.com',
       source: 'https://google.com',
-    }
+    },
   },
   {
     title: 'Website Protfolio',
@@ -27,7 +27,7 @@ const cards = [
     links: {
       live: 'https://google.com',
       source: 'https://google.com',
-    }
+    },
   },
   {
     title: 'Professional Art Printing Data',
@@ -37,7 +37,7 @@ const cards = [
     links: {
       live: 'https://google.com',
       source: 'https://google.com',
-    }
+    },
   },
   {
     title: 'Data Dashboard Healthcare',
@@ -47,7 +47,7 @@ const cards = [
     links: {
       live: 'https://google.com',
       source: 'https://google.com',
-    }
+    },
   },
   {
     title: 'Website Protfolio',
@@ -57,7 +57,7 @@ const cards = [
     links: {
       live: 'https://google.com',
       source: 'https://google.com',
-    }
+    },
   },
 ];
 const menuHamburgerBtn = document.querySelector('#hamburger');
@@ -145,7 +145,6 @@ closeBtn.addEventListener('click', displayMenu);
 popupCloseBtn.addEventListener('click', closePopup);
 bubbleCloseBtn.addEventListener('click', closeBubble);
 
-
 for (let i = 0; i < navLinks.length; i += 1) {
   navLinks[i].addEventListener('click', displayMenu);
 }
@@ -164,11 +163,10 @@ const checkLower = (input) => {
     closeBubble();
     email.innerText = '';
     return true;
-  } else {
-    bubbleContent.firstChild.innerText = msgContent;
-    closeBubble();
-    return false;
   }
+  bubbleContent.firstChild.innerText = msgContent;
+  closeBubble();
+  return false;
 };
 
 form.addEventListener('submit', (event) => {
