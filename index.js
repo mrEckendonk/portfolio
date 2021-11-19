@@ -76,7 +76,11 @@ const msgContent = 'The content of the email field has to be in lower case.';
 const bubble = document.querySelector('.bubble_error');
 
 function closeBubble() {
-  bubble.classList.toggle('hidden');
+  bubble.classList.add('hidden');
+}
+
+function openBubble() {
+  bubble.classList.remove('hidden');
 }
 
 function displayMenu() {
@@ -165,7 +169,7 @@ const checkLower = (input) => {
     return true;
   }
   bubbleContent.firstChild.innerText = msgContent;
-  closeBubble();
+  openBubble();
   return false;
 };
 
