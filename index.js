@@ -76,7 +76,11 @@ const msgContent = 'The content of the email field has to be in lower case.';
 const bubble = document.querySelector('.bubble_error');
 
 function closeBubble() {
-  bubble.classList.toggle('hidden');
+  bubble.classList.add('hidden');
+}
+
+function openBubble() {
+  bubble.classList.remove('hidden');
 }
 
 function displayMenu() {
@@ -165,7 +169,7 @@ const checkLower = (input) => {
     return true;
   }
   bubbleContent.firstChild.innerText = msgContent;
-  closeBubble();
+  openBubble();
   return false;
 };
 
@@ -173,4 +177,27 @@ form.addEventListener('submit', (event) => {
   if (!checkLower(email.value)) {
     event.preventDefault();
   }
+});
+
+const username = form.querySelector('#full-name');
+const message = form.querySelector('#message');
+
+const saveDate = () => {
+  const formData = {
+    name: username.value,
+    email: email.value,
+    msg: message.value,
+  };
+  localStorage.setItem('formData', JSON.stringify(formData));
+};
+
+username.addEventListener('change', saveDate);
+email.addEventListener('change', saveDate);
+message.addEventListener('change', saveDate);
+
+window.addEventListener('load', () => {
+  const formData = JSON.parse(localStorage.getItem('formData'));
+  username.value = formData.name;
+  email.value = formData.email;
+  message.value = formData.msg;
 });
