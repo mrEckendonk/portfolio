@@ -182,6 +182,7 @@ form.addEventListener('submit', (event) => {
 const username = form.querySelector('#full-name');
 const message = form.querySelector('#message');
 
+// Local Storage
 const saveDate = () => {
   const formData = {
     name: username.value,
