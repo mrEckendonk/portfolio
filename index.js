@@ -1,12 +1,12 @@
 const cards = [
   {
-    title: 'Profesional Art Printing Data Ramoun',
-    text: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+    title: 'Awesome Books List',
+    text: "",
     img: 'img1',
     tech: ['html', 'bootstrap', 'Ruby'],
     links: {
-      live: 'https://google.com',
-      source: 'https://google.com',
+      live: 'https://awesomebooks-1.netlify.app',
+      source: 'https://github.com/mrEckendonk/Awesome-books',
     },
   },
   {
