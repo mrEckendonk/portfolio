@@ -59,7 +59,7 @@ N/A
 
 👤 **Author**
 
-- GitHub: [@Eckybrazzz](https://github.com/mrEckendonk)
+- GitHub: [@mrEckendonk](https://github.com/mrEckendonk)
 - Twitter: [@twitterhandle](https://twitter.com/mike_eckendonk)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/mike-van-eckendonk)
 
