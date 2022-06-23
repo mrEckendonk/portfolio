@@ -3,7 +3,7 @@ const cards = [
     title: 'Awesome Books List',
     text: "",
     img: 'img1',
-    tech: ['html', 'bootstrap', 'Ruby'],
+    tech: ['HTML', 'Bootstrap', 'JavaScript'],
     links: {
       live: 'https://awesomebooks-1.netlify.app',
       source: 'https://github.com/mrEckendonk/Awesome-books',
