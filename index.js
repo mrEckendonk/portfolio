@@ -1,6 +1,7 @@
 const cards = [
   {
     title: "World Energy Event",
+    intro: "World event about Renewable Energy, Solar Energy, Clean Energy, with fantastic speakers and workshops",
     text: "World event about Renewable Energy, Solar Energy, Clean Energy, with fantastic speakers and workshops. Many new technologies are coming to the world, and we are going to discuss how to use them. Best of all, we are going to be the best event in the world on these technologies.",
     src: "./assets/energy_event.png",
     img: "energy_event",
@@ -12,6 +13,7 @@ const cards = [
   },
   {
     title: "Awesome Books List",
+    intro: "World event about Renewable Energy, Solar Energy, Clean Energy, with fantastic speakers and workshops",
     text: "Booklist of books that I have read and enjoyed. I have also read a lot of books that I have not enjoyed. Here I can manage my books and read them later.",
     img: "img1",
     src: "assets/awesome_books.png",
@@ -23,6 +25,7 @@ const cards = [
   },
   {
     title: "Data Dashboard Healthcare",
+    intro: "World event about Renewable Energy, Solar Energy, Clean Energy, with fantastic speakers and workshops",
     text: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     img: "img2",
     src: "assets/image_backgrnd2.png",
@@ -34,6 +37,7 @@ const cards = [
   },
   {
     title: "Website Protfolio",
+    intro: "World event about Renewable Energy, Solar Energy, Clean Energy, with fantastic speakers and workshops",
     text: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     img: "img3",
     src: "assets/image_backgrnd2.png",
@@ -45,6 +49,7 @@ const cards = [
   },
   {
     title: "Professional Art Printing Data",
+    intro: "World event about Renewable Energy, Solar Energy, Clean Energy, with fantastic speakers and workshops",
     text: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     img: "img4",
     src: "./assets/energy_event.png",
@@ -56,6 +61,7 @@ const cards = [
   },
   {
     title: "Data Dashboard Healthcare",
+    intro: "World event about Renewable Energy, Solar Energy, Clean Energy, with fantastic speakers and workshops",
     text: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     img: "img2",
     src: "./assets/energy_event.png",
@@ -67,6 +73,7 @@ const cards = [
   },
   {
     title: "Website Protfolio",
+    intro: "World event about Renewable Energy, Solar Energy, Clean Energy, with fantastic speakers and workshops",
     text: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     img: "img3",
     src: "./assets/energy_event.png",
@@ -103,8 +110,6 @@ function displayMenu() {
   const mobileMenu = document.getElementById("mobileMenu");
   mobileMenu.classList.toggle("hidden");
 }
-
-
 
 function showCards(i) {
   const professionalArt = document.createElement("div");
