@@ -21,7 +21,7 @@ Additional description about the project and its features.
 - Git & GitHub
 ## Live Demo link
 
-[Live Demo Link](https://mrEckendonk.github.io/portfolio/)
+[Live Demo Link](https://portfolio-mreckendonk.netlify.app/)
 
 
 ## Getting Started
