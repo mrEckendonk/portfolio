@@ -26,6 +26,11 @@ h3 {
   line-height: 32px;
 }
 
+.container {
+  width: 100vw;
+  height: 100vh;
+}
+
 .top-bar {
   display: flex;
   background-color: #3c3a39;
@@ -650,7 +655,7 @@ button:active {
 
 .contact-hr {
   border: 0;
-  width: 327px;
+  width: auto;
   display: block;
   margin-top: 14px;
   margin-left: 24px;
@@ -660,6 +665,7 @@ button:active {
 }
 
 .form-text {
+  margin-left: 25px;
   margin-top: 24px;
   width: 310px;
   height: 114px;
