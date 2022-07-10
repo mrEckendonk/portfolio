@@ -1,70 +1,92 @@
 const cards = [
   {
-    title: 'Awesome Books List',
-    text: "",
-    img: 'img1',
+    title: 'World Energy Event',
+    intro: 'World event about Renewable Energy, Solar Energy, Clean Energy, with fantastic speakers and workshops',
+    text: 'World event about Renewable Energy, Solar Energy, Clean Energy, with fantastic speakers and workshops. Many new technologies are coming to the world, and we are going to discuss how to use them. Best of all, we are going to be the best event in the world on these technologies.',
+    src: './assets/energy_event.png',
+    img: 'energy_event',
     tech: ['html', 'bootstrap', 'Ruby'],
     links: {
-      live: 'https://awesomebooks-1.netlify.app',
-      source: 'https://github.com/mrEckendonk/Awesome-books',
+      live: "'https://creative-world-event.netlify.app/'",
+      source: "'https://github.com/mrEckendonk/World-Energy-Event'",
+    },
+  },
+  {
+    title: 'Awesome Books List',
+    intro: 'World event about Renewable Energy, Solar Energy, Clean Energy, with fantastic speakers and workshops',
+    text: 'Booklist of books that I have read and enjoyed. I have also read a lot of books that I have not enjoyed. Here I can manage my books and read them later.',
+    img: 'img1',
+    src: 'assets/awesome_books.png',
+    tech: ['html', 'bootstrap', 'Ruby'],
+    links: {
+      live: "'https://awesomebooks-1.netlify.app'",
+      source: "'https://github.com/mrEckendonk/Awesome-books'",
     },
   },
   {
     title: 'Data Dashboard Healthcare',
+    intro: 'World event about Renewable Energy, Solar Energy, Clean Energy, with fantastic speakers and workshops',
     text: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     img: 'img2',
+    src: 'assets/image_backgrnd2.png',
     tech: ['html', 'bootstrap', 'Ruby'],
     links: {
-      live: 'https://google.com',
-      source: 'https://google.com',
+      live: "'https://google.com'",
+      source: "'https://google.com'",
     },
   },
   {
     title: 'Website Protfolio',
+    intro: 'World event about Renewable Energy, Solar Energy, Clean Energy, with fantastic speakers and workshops',
     text: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     img: 'img3',
+    src: 'assets/image_backgrnd2.png',
     tech: ['html', 'bootstrap', 'Ruby'],
     links: {
-      live: 'https://google.com',
-      source: 'https://google.com',
+      live: "'https://google.com'",
+      source: "'https://google.com'",
     },
   },
   {
     title: 'Professional Art Printing Data',
+    intro: 'World event about Renewable Energy, Solar Energy, Clean Energy, with fantastic speakers and workshops',
     text: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     img: 'img4',
+    src: './assets/energy_event.png',
     tech: ['html', 'bootstrap', 'Ruby'],
     links: {
-      live: 'https://google.com',
-      source: 'https://google.com',
+      live: "'https://google.com'",
+      source: "'https://google.com'",
     },
   },
   {
     title: 'Data Dashboard Healthcare',
+    intro: 'World event about Renewable Energy, Solar Energy, Clean Energy, with fantastic speakers and workshops',
     text: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     img: 'img2',
+    src: './assets/energy_event.png',
     tech: ['html', 'bootstrap', 'Ruby'],
     links: {
-      live: 'https://google.com',
-      source: 'https://google.com',
+      live: "'https://google.com'",
+      source: "'https://google.com'",
     },
   },
   {
     title: 'Website Protfolio',
+    intro: 'World event about Renewable Energy, Solar Energy, Clean Energy, with fantastic speakers and workshops',
     text: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     img: 'img3',
+    src: './assets/energy_event.png',
     tech: ['html', 'bootstrap', 'Ruby'],
     links: {
-      live: 'https://google.com',
-      source: 'https://google.com',
+      live: "'https://google.com'",
+      source: "'https://google.com'",
     },
   },
 ];
 const menuHamburgerBtn = document.querySelector('#hamburger');
-const popupMenu = document.querySelector('.popup');
 const closeBtn = document.querySelector('.close_btn');
-const popupCloseBtn = document.querySelector('.popup-close_btn');
-const mobileMenu = document.getElementById('mobileMenu');
+
 const navLinks = document.querySelectorAll('.nav_link');
 const proArtContainer = document.querySelector('.container-section1');
 
@@ -74,6 +96,7 @@ const bubbleCloseBtn = document.querySelector('.bubble_close');
 const bubbleContent = document.querySelector('.bubble_content');
 const msgContent = 'The content of the email field has to be in lower case.';
 const bubble = document.querySelector('.bubble_error');
+const workSection = document.querySelector('#works_section');
 
 function closeBubble() {
   bubble.classList.add('hidden');
@@ -84,11 +107,8 @@ function openBubble() {
 }
 
 function displayMenu() {
+  const mobileMenu = document.getElementById('mobileMenu');
   mobileMenu.classList.toggle('hidden');
-}
-
-function closePopup() {
-  popupMenu.classList.toggle('hidden');
 }
 
 function showCards(i) {
@@ -135,31 +155,134 @@ function showCards(i) {
   seeProjBtn.classList.add('about-btn1');
   seeProjBtn.classList.add('see_proj');
   seeProjBtn.innerText = 'See Project';
+
   professionalArt.appendChild(seeProjBtn);
 
   proArtContainer.appendChild(professionalArt);
 }
 
-function displayPopup() {
-  popupMenu.classList.toggle('hidden');
+function populatePopup(card) {
+  const {
+    title, text, src, tech, links,
+  } = card;
+  const popupTemplate = `<div class="popup">
+        <div class="popup-content">
+          <header class="popup-header">
+            <h2>${title}</h2>
+            <div class="popup-close_btn">
+              <img src="assets/Icon-Cancel.png" alt="Cancel Button" />
+            </div>
+          </header>
+          <nav class="pro-nav">
+            <ul class="pro-cont">
+            ${
+  tech.map((technology) => `
+                <li class="pro-btn">
+                  <a href="#">${technology}</a>
+                </li>
+              `).join('')
+}
+            </ul>
+          </nav>
+          <div class="middle_section">
+            <img src=${src} alt="project image" class="joga" />
+            <div class="side_section">
+              <div class="text3">
+                <p>
+                ${text}
+                </p>
+              </div>
+              <div class="btns">
+                <button
+                  type="button"
+                  class="see_btn"
+                  onclick="window.location.href =${links.live};"
+                >
+                See Live
+
+                <img src="assets/see_src.svg" alt="See Source">
+
+                </button>
+                <button
+                type="button"
+                class="see_btn"
+                onclick="window.location.href=${links.source};"
+                >
+                See Source
+
+                <img src="assets/GitHub.svg" alt="github logo">
+
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+`;
+  document.querySelector('.projects-container').insertAdjacentHTML('beforeend', popupTemplate);
+  const popupCloseBtn = document.querySelector('.popup-close_btn');
+  popupCloseBtn.addEventListener('click', () => {
+    document.querySelector('.popup').remove();
+  });
 }
 
 menuHamburgerBtn.addEventListener('click', displayMenu);
 closeBtn.addEventListener('click', displayMenu);
-popupCloseBtn.addEventListener('click', closePopup);
 bubbleCloseBtn.addEventListener('click', closeBubble);
+
+const {
+  title, text, src, tech,
+} = cards[0];
+
+const mainProjecttemplate = `
+      <div>
+        <img src="${src}" alt="project image" class="joga" />
+      </div>
+      <div class="text2">
+        <h3>${title}</h3>
+      </div>
+      <div class="text3">
+        <p>
+          ${text}
+        </p>
+      </div>
+      <!-- Menu Items-->
+      <div class="language-container">
+        <nav class="nav-page2">
+          <ul class="link-tag">
+          ${
+  tech.map(
+    (technology) => `
+              <li class="link-1">
+                ${technology}
+              </li>
+            `,
+  ).join('')
+}
+          </ul>
+        </nav>
+        <button type="button" class="btn2 see_proj">
+          See Project
+        </button>
+        <div class="space"></div>
+      </div>
+`;
+workSection.insertAdjacentHTML('beforeend', mainProjecttemplate);
 
 for (let i = 0; i < navLinks.length; i += 1) {
   navLinks[i].addEventListener('click', displayMenu);
 }
 
-for (let i = 0; i < cards.length; i += 1) {
+for (let i = 1; i < cards.length; i += 1) {
   showCards(i);
 }
 
 const seeProjList = document.querySelectorAll('.see_proj');
 for (let i = 0; i < seeProjList.length; i += 1) {
-  seeProjList[i].addEventListener('click', displayPopup);
+//  seeProjList[i].addEventListener("click", displayPopup);
+  seeProjList[i].addEventListener('click', () => {
+    populatePopup(cards[i]);
+  });
 }
 
 const checkLower = (input) => {
@@ -198,7 +321,9 @@ message.addEventListener('change', saveDate);
 
 window.addEventListener('load', () => {
   const formData = JSON.parse(localStorage.getItem('formData'));
-  username.value = formData.name;
-  email.value = formData.email;
-  message.value = formData.msg;
+  if (formData) {
+    username.value = formData.name;
+    email.value = formData.email;
+    message.value = formData.msg;
+  }
 });

@@ -26,6 +26,11 @@ h3 {
   line-height: 32px;
 }
 
+.container {
+  width: 100vw;
+  height: 100vh;
+}
+
 .top-bar {
   display: flex;
   background-color: #3c3a39;
@@ -226,6 +231,7 @@ ul {
 }
 
 .works_section {
+  margin-bottom: 25px;
   padding-left: 24px;
   padding-right: 24px;
 }
@@ -235,7 +241,7 @@ ul {
   font-size: 40px;
   font-style: normal;
   font-weight: 400;
-  padding-top: 180px;
+  padding-top: 65px;
   padding-bottom: 24px;
   color: #1c1a19;
 }
@@ -262,7 +268,7 @@ ul {
   width: 255px;
   font-weight: 400;
   line-height: 44px;
-  padding-top: 92px;
+  padding-top: 15px;
   color: #1c1a19 !important;
 }
 
@@ -461,7 +467,7 @@ ul {
   display: flex;
   flex-direction: column;
   background: #1c1a19;
-  margin-top: 110px;
+  margin-top: 15px;
 }
 
 .about-me,
@@ -471,7 +477,7 @@ ul {
   font-weight: 400;
   text-align: center;
   color: #ff6b00;
-  padding-top: 50px;
+  padding-top: 45px;
   line-height: 88px;
   transition: all 0.2s ease-in-out;
 }
@@ -503,12 +509,11 @@ ul {
   background: url("assets/about_me.png");
   background-repeat: no-repeat;
   background-position: right;
-  padding: 0 0 500px 0;
+  padding: 0 0 250px 0;
 }
 
 .line2 {
-  margin-top: -260px;
-  margin-bottom: 2px;
+  margin-top: -175px;
   height: 1px;
   background-color: #fff;
   margin-left: 24px;
@@ -650,7 +655,7 @@ button:active {
 
 .contact-hr {
   border: 0;
-  width: 327px;
+  width: auto;
   display: block;
   margin-top: 14px;
   margin-left: 24px;
@@ -660,10 +665,10 @@ button:active {
 }
 
 .form-text {
+  margin-left: 25px;
   margin-top: 24px;
-  width: 30%;
+  width: 310px;
   height: 114px;
-  margin-left: 24px;
   background: #fbf8f7;
   padding: 12px;
   border: none;
@@ -730,7 +735,7 @@ button:active {
   margin-top: 40px;
   margin-bottom: 2px;
   height: 1px;
-  width: 90%;
+  width: 100%;
   background-color: #0a0908;
 }
 
@@ -756,7 +761,7 @@ button:active {
   display: none;
 }
 
-@media screen and (min-width: 996px) {
+@media screen and (min-width: 768px) {
   .top-bar-left {
     height: 20px;
     padding-left: 154px;
