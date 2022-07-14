@@ -12,9 +12,10 @@ html {
   padding: 0;
 }
 
-/*
- Top Section
-*/
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 
 h2 {
   font-size: 38px;
@@ -180,6 +181,7 @@ a:visited {
 
 .background {
   background: url("assets/background_mobile.svg");
+  background-size: calc(15% + 100px);
   background-repeat: no-repeat;
   background-color: #1c1a19;
   background-position: right 110%;
@@ -380,7 +382,7 @@ ul {
 }
 
 .img2 {
-  background: url("assets/image_backgrnd2.png");
+  background: url("assets/todo_app_b.png");
   background-repeat: no-repeat;
   background-size: cover;
   flex-basis: 369px;
@@ -507,6 +509,7 @@ ul {
 
 .backgroundabout-me {
   background: url("assets/about_me.png");
+  background-size: calc(25% + 100px);
   background-repeat: no-repeat;
   background-position: right;
   padding: 0 0 250px 0;
