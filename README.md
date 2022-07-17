@@ -1,3 +1,4 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/372b8e5c-f987-4d7a-ba79-c7a6673343fe/deploy-status)](https://app.netlify.com/sites/portfolio-mreckendonk/deploys)
 # Project Name : Portfolio
 
 This is the Portfolio of Mike van Eckendonk as a page to show all the work he did.
@@ -8,6 +9,11 @@ https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?n
 
 This is a mobile version of the figma template 2 and has many pages.
 I used VScode as my editor and created the files needed for this project
+
+## Live preview
+![Live preview](https://portfolio-mreckendonk.netlify.app/)
+
+## Screenshot
 
 ![screenshot](./app_screenshot.png)
 
