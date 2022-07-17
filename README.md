@@ -10,8 +10,9 @@ https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?n
 This is a mobile version of the figma template 2 and has many pages.
 I used VScode as my editor and created the files needed for this project
 
-## Live preview
-![Live preview](https://portfolio-mreckendonk.netlify.app/)
+## Live Demo link
+
+[Live Demo Link](https://portfolio-mreckendonk.netlify.app/)
 
 ## Screenshot
 
@@ -25,10 +26,6 @@ Additional description about the project and its features.
 - CSS
 - VScode
 - Git & GitHub
-## Live Demo link
-
-[Live Demo Link](https://portfolio-mreckendonk.netlify.app/)
-
 
 ## Getting Started
 
