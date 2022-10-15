@@ -19,16 +19,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
   <link
-    href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@400;500;700&family=Poppins&family=Roboto:wght@700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto:wght@700&display=swap"
     rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="styles.css" />
   <!-- <link rel="stylesheet" href="debug.css" /> -->
   <title>Mike's Portfolio</title>
 </head>
 
 <body>
-  <div class="container">
+  <div class="container mx-auto">
   <header>
     <div id="mobileMenu" class="hidden">
       <div class="close_btn">
@@ -41,8 +42,8 @@
         <li><a href="#contact_section" class="nav_link">Contact</a></li>
       </ul>
     </div>
-    <div class="top-bar">
-      <div class="top-bar-left">
+    <div class="flex justify-end bg-stone-800 top-bar">
+      <div class="flex-auto top-bar-left">
         <a href="#"><span class="top-bar-left-name">Mike van Eckendonk</span></a>
       </div>
       <nav class="top-bar-icon">
