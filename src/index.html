@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-PPJMX9Z8TM"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'G-PPJMX9Z8TM');
+    </script>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="styles.css" /> -->
+    <link href="/dist/output.css" rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="debug.css" /> -->
+    <title>Mike's Portfolio</title>
+  </head>
+
+  <body>
+    <div class="container max-w-full">
+      <header>
+        <div id="mobileMenu" class="flex w-full h-screen py-5 bg-slate-700 md:hidden">
+          
+          <ul>
+            <li><a href="#portfolio" class="px-8 text-2xl text-white">Portfolio</a></li>
+            <li><a href="#about_section" class="px-8 text-2xl text-white">About</a></li>
+            <li><a href="#contact_section" class="px-8 text-2xl text-white">Contact</a></li>
+          </ul>
+          
+          <div class=" close-mobile">
+            <img src="assets/Icon-Cancel.png" alt="Cancel Button" />
+          </div>
+
+        </div>
+
+
+        <nav class="px-4 md:px-4 py-2.5 bg-slate-800">
+          <div class="flex flex-wrap justify-between md:w-5/6 items-center mx-auto">
+            <a
+              href="https://vecks.com.br"
+              class="flex items-center grow py-2.5 text-xl font-roboto font-semibold whitespace-nowrap text-white hover:underline"
+            >
+              Mike van Eckendonk
+            </a>
+            <div class="flex items-center md:order-2 md:hidden" id="mobile">
+              <button
+                data-collapse-toggle="mega-menu"
+                type="button"
+                class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg"
+                aria-controls="mega-menu"
+                aria-expanded="false"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="w-6 h-6"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+            <div
+              id="mega-menu"
+              class="hidden justify-between items-center w-full pr-6 text-sm md:flex md:w-auto md:order-1"
+            >
+              <ul
+                class="flex flex-col mt-4 font-medium md:flex-row md:space-x-8 md:mt-0"
+              >
+                <li>
+                  <a href="#portfolio"
+                    
+                    class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-gray-400 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700"
+                    aria-current="page"
+                    >Portfolio</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                  href="#about_header"
+                    class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-gray-400 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700"
+                    >About</a
+                  >
+                </li>
+                <li>
+                  <a
+                  href="mailto:mike.e@vecks.com.br"
+                    class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-gray-400 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700"
+                    >Contact</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="mailto:mike.e@vecks.com.br">
+                  
+                    <svg
+                    aria-hidden="true"
+                    class="w-4 h-4"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M7.4 5H16.6C17.7531 5 18.4977 5.00156 19.0643 5.04785C19.6077 5.09225 19.8091 5.1676 19.908 5.21799C20.2843 5.40973 20.5903 5.71569 20.782 6.09202C20.8324 6.19091 20.9078 6.39235 20.9521 6.93567C20.9984 7.50235 21 8.24689 21 9.4V14.6C21 15.7531 20.9984 16.4977 20.9521 17.0643C20.9078 17.6077 20.8324 17.8091 20.782 17.908C20.5903 18.2843 20.2843 18.5903 19.908 18.782C19.8091 18.8324 19.6077 18.9078 19.0643 18.9521C18.4977 18.9984 17.7531 19 16.6 19H7.4C6.24689 19 5.50235 18.9984 4.93567 18.9521C4.39235 18.9078 4.19091 18.8324 4.09202 18.782C3.71569 18.5903 3.40973 18.2843 3.21799 17.908C3.1676 17.8091 3.09225 17.6077 3.04785 17.0643C3.00156 16.4977 3 15.7531 3 14.6V9.4C3 8.24689 3.00156 7.50235 3.04785 6.93567C3.09225 6.39235 3.1676 6.19091 3.21799 6.09202C3.40973 5.71569 3.71569 5.40973 4.09202 5.21799C4.19091 5.1676 4.39235 5.09225 4.93567 5.04785C5.50235 5.00156 6.24689 5 7.4 5ZM1 9.4C1 7.15979 1 6.03969 1.43597 5.18404C1.81947 4.43139 2.43139 3.81947 3.18404 3.43597C4.03969 3 5.15979 3 7.4 3H16.6C18.8402 3 19.9603 3 20.816 3.43597C21.5686 3.81947 22.1805 4.43139 22.564 5.18404C23 6.03969 23 7.15979 23 9.4V14.6C23 16.8402 23 17.9603 22.564 18.816C22.1805 19.5686 21.5686 20.1805 20.816 20.564C19.9603 21 18.8402 21 16.6 21H7.4C5.15979 21 4.03969 21 3.18404 20.564C2.43139 20.1805 1.81947 19.5686 1.43597 18.816C1 17.9603 1 16.8402 1 14.6V9.4ZM6.5547 7.16795C6.09517 6.8616 5.4743 6.98577 5.16795 7.4453C4.8616 7.90483 4.98577 8.5257 5.4453 8.83205L11.4453 12.8321C11.7812 13.056 12.2188 13.056 12.5547 12.8321L18.5547 8.83205C19.0142 8.5257 19.1384 7.90483 18.8321 7.4453C18.5257 6.98577 17.9048 6.8616 17.4453 7.16795L12 10.7981L6.5547 7.16795Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <section class="intro background background-desktop">
+        <div>
+          <h1 class="my-name">Hey There. <br />I’m Mike</h1>
+        </div>
+        <div class="subtext">
+          <h3>I’am a Software Developer</h3>
+        </div>
+        <div class="text">
+          <p>
+            I can help you build a product , feature or website Look through
+            some of my work and experience! If you like what you see and have a
+            project you need coded, don’t hesitate to contact me.
+          </p>
+        </div>
+        <div>
+          <ul class="social-icons">
+            <li>
+              <a
+                rel="noopener noreferrer"
+                href="https://github.com/mrEckendonk"
+                target="_blank"
+                ><img class="gitlogo" src="assets/GitHub.svg" alt="GitHub logo"
+              /></a>
+            </li>
+            <li>
+              <a
+                rel="noopener noreferrer"
+                href="https://www.linkedin.com/in/mike-van-eckendonk"
+                target="_blank"
+                ><img
+                  class="linklogo"
+                  src="assets/Linkedin.svg"
+                  alt="Linkedin logo"
+              /></a>
+            </li>
+            <li>
+              <a rel="noopener noreferrer" href="#" target="_blank"
+                ><img
+                  class="peacelogo"
+                  src="assets/Peace.svg"
+                  alt="angellist logo"
+              /></a>
+            </li>
+            <li>
+              <a
+                rel="noopener noreferrer"
+                href="https://twitter.com/mike_eckendonk"
+                target="_blank"
+                ><img
+                  class="twlogo"
+                  src="assets/Twitter.svg"
+                  alt="twitter logo"
+              /></a>
+            </li>
+            <li>
+              <a rel="noopener noreferrer" href="#" target="_blank"
+                ><img
+                  class="mediumlogo"
+                  src="assets/Medium.svg"
+                  alt="Medium logo"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="works_section" id="portfolio">
+        <div>
+          <h3 class="recent-work">My Recent Works</h3>
+        </div>
+        <div class="line"></div>
+      </section>
+
+      <!-- Professional Art -->
+      <section class="projects-container">
+        <div class="container-section">
+          <div class="container-section1"></div>
+        </div>
+
+        <div id="about_section" class="about-me">
+          <div class="backgroundabout-me">
+            <div class="first" id="about_header">
+              <h2>About me</h2>
+            </div>
+            <div class="second">
+              <p>
+                Hello I’m a software developer! I can help you build a product,
+                feature or website Look through some of my work and experience!
+                If you like what you see and have a project you need coded,
+                don’t hesitate to contact me.
+              </p>
+              <br />
+              <button type="button" class="about-btn">Get My Resume</button>
+            </div>
+          </div>
+          <div class="line2"></div>
+          <div class="skills">
+            <ul>
+              <li>
+                <h4 id="language" class="skilled-1">Language</h4>
+                <ul class="inner-list1">
+                  <li>Javascript</li>
+                  <li>Ruby</li>
+                  <li>Html</li>
+                  <li>Css</li>
+                </ul>
+              </li>
+              <li>
+                <h4 id="framework" class="skilled-2">Frameworks</h4>
+                <ul class="inner-list2">
+                  <li>Bootstrap</li>
+                  <li>Ruby on Rails</li>
+                  <li>RSPec</li>
+                  <li>CapyBara</li>
+                  <li>Selenium</li>
+                </ul>
+              </li>
+              <li>
+                <h4 id="skilled" class="skilled-3">Skills</h4>
+                <ul class="inner-list3">
+                  <li>Codekit</li>
+                  <li>Github</li>
+                  <li>Codepen</li>
+                  <li>Gitlab</li>
+                  <li>Terminal</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="form_header" class="contact-container">
+        <div class="cnt-container"></div>
+        <div class="main-text">
+          <p>
+            I'm always interested in hearing about new projects, so if you'd
+            like to chat please get in touch.
+          </p>
+        </div>
+        <form
+          class="form-container"
+          id="fs-frm"
+          name="simple-contact-form"
+          accept-charset="utf-8"
+          action="https://formspree.io/f/xyyloboj"
+          method="post"
+        >
+          <input
+            class="form-input1"
+            type="text"
+            name="name"
+            maxlength="30"
+            id="full-name"
+            placeholder="Full name"
+            required
+          />
+          <hr class="contact-hr" />
+          <input
+            class="form-input2"
+            type="email"
+            name="_replyto"
+            id="email-address"
+            placeholder="Email address"
+            required
+          />
+          <hr class="contact-hr" />
+          <textarea
+            class="form-text"
+            rows="5"
+            name="message"
+            maxlength="500"
+            id="message"
+            placeholder="Enter text here"
+            required
+          ></textarea>
+          <button class="about-btn4" type="submit">Get in touch</button>
+          <div class="bubble_error hidden">
+            <div class="bubble_content">
+              <p>Email address should contain lowercase only</p>
+              <div class="bubble_close popup-close_btn">
+                <img src="assets/Icon-Cancel.png" alt="Cancel Button" />
+              </div>
+            </div>
+          </div>
+        </form>
+        <hr class="hr-line-bottom" />
+      </section>
+      <section class="social-container">
+        <ul class="social-icons-bottom">
+          <li>
+            <a
+              rel="noopener noreferrer"
+              href="https://github.com/Eckybrazzz"
+              target="_blank"
+              ><img class="gitlogo" src="assets/GitHubd.svg" alt="GitHub logo"
+            /></a>
+          </li>
+          <li>
+            <a
+              rel="noopener noreferrer"
+              href="https://www.linkedin.com/in/mike-van-eckendonk"
+              target="_blank"
+              ><img
+                class="linklogo"
+                src="assets/Linkedind.svg"
+                alt="Linkedin logo"
+            /></a>
+          </li>
+          <li>
+            <a rel="noopener noreferrer" href="#" target="_blank"
+              ><img
+                class="peacelogo"
+                src="assets/Peaced.svg"
+                alt="angellist logo"
+            /></a>
+          </li>
+          <li>
+            <a
+              rel="noopener noreferrer"
+              href="https://twitter.com/mike_eckendonk"
+              target="_blank"
+              ><img class="twlogo" src="assets/Twitterd.svg" alt="twitter logo"
+            /></a>
+          </li>
+          <li>
+            <a rel="noopener noreferrer" href="#" target="_blank"
+              ><img class="mediumlogo" src="assets/Mediumd.svg" alt="My Medium"
+            /></a>
+          </li>
+        </ul>
+      </section>
+      <div class="hr-line-last"></div>
+
+      <script src="index.js" defer></script>
+    </div>
+  </body>
+</html>
