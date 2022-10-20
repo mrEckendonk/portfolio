@@ -1,5 +1,4 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/372b8e5c-f987-4d7a-ba79-c7a6673343fe/deploy-status)](https://app.netlify.com/sites/portfolio-mreckendonk/deploys)
-# Project Name : Portfolio
+[![Netlify Status]Project Name: Portfolio
 
 This is the Portfolio of Mike van Eckendonk as a page to show all the work he did.
 
@@ -22,22 +21,20 @@ Additional description about the project and its features.
 
 ## Built With
 
-- HTML 
-- CSS
+- HTML
+- Tailwind CSS
 - VScode
 - Git & GitHub
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 have a working git on your localmachine.
+
 ## Install
+
 To get a working local copy up and running follow these simple steps
 - open terminal
 - clone this project with the command:
@@ -50,12 +47,7 @@ $ git clone https://github.com/mrEckendonk/Portfolio.git
 ```
 $ npm start
 ```
-### Usage
-For anyone that whats to learn html & css & javascript, this is a great place to start.
-### Run tests
-N/A
-### Deployment
-N/A
+
 
 
 ## Author
@@ -78,7 +70,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
+- Hat tip to anyone whose code was used (don't plagiarize)
 - Inspiration 💘
 - Microverse program ⚡
 - My standup team 🏹
