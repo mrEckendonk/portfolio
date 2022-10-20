@@ -75,13 +75,13 @@ h3 {
   padding-top: 16px;
 }
 
-.intro {
-  padding-top: 20px;
-  display: flex;
-  height: 650px;
+/* .intro {
+  padding-top: 20px; */
+  /* display: flex; */
+  /* height: 650px;
   flex-direction: column;
   padding-left: 24px;
-}
+} */
 
 .hidden {
   display: none !important;
