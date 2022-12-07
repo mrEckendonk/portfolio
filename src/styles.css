@@ -3,20 +3,6 @@
 @tailwind components;
 @tailwind utilities; */
 
-/* html {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-} */
-
-/* * *,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-} */
-
 /* body {
   max-width: 100%;
   overflow-x: hidden;
@@ -30,11 +16,6 @@ h3 {
   font-size: 24px;
   color: #fff5e1;
   line-height: 32px;
-} */
-
-/* .container {
-  width: 100vw;
-  height: 100vh;
 } */
 
 /* .top-bar { */
@@ -65,14 +46,6 @@ h3 {
 /* .top-bar-left-name:hover {
   text-decoration: underline;
   text-decoration-color: rgb(254, 254, 255);
-} */
-
-/* .top-bar-icon {
-  display: flex;
-  margin-left: auto;
-  background-color: #3c3a39;
-  padding-right: 24px;
-  padding-top: 16px;
 } */
 
 /* .intro {
@@ -120,19 +93,12 @@ h3 {
   padding-right: 24px;
 }
 
-/* .profesional-container {
+.profesional-container {
   display: flex;
   margin: 5px 16px 16px 16px;
-} */
+}
 
-/* a:link,
-a:visited {
-  text-decoration: none;
-  text-align: center;
-  display: inline-block;
-} */
-
-/* .pro_btn a {
+ .pro_btn a {
   color: #3c3a39;
 }
 
@@ -710,34 +676,6 @@ button:active {
   justify-content: center;
 } */
 
-/* @keyframes wave {
-  from {
-    transform: rotate(0deg);
-  }
-
-  33% {
-    transform: rotate(-10deg);
-  }
-
-  66% {
-    transform: rotate(10deg);
-  }
-
-  to {
-    transform: rotate(0deg);
-  }
-} */
-
-.gitlogo:hover,
-.linklogo:hover,
-.peacelogo:hover,
-.twlogo:hover,
-.mediumlogo:hover {
-  animation-duration: 0.3s;
-  animation-name: wave;
-  animation-timing-function: linear;
-}
-
 .hr-line-bottom {
   text-align: center;
   margin-top: 40px;
@@ -747,13 +685,6 @@ button:active {
   background-color: #0a0908;
 }
 
-.social-icons-bottom {
-  display: flex;
-  color: #505f79;
-  padding-top: 24px;
-  padding-bottom: 20px;
-  grid-gap: 15px;
-}
 
 .hr-line-last {
   width: 135px;
@@ -769,7 +700,7 @@ button:active {
   display: none;
 }
 
-/* @media screen and (min-width: 768px) {
+ @media screen and (min-width: 768px) {
   .top-bar-left {
     height: 20px;
     padding-left: 154px;
