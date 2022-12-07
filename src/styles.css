@@ -1,60 +1,6 @@
-/* /styles.css
 @tailwind base;
 @tailwind components;
-@tailwind utilities; */
-
-/* body {
-  max-width: 100%;
-  overflow-x: hidden;
-} */
-
-/* h2 {
-  font-size: 38px;
-}
-
-h3 {
-  font-size: 24px;
-  color: #fff5e1;
-  line-height: 32px;
-} */
-
-/* .top-bar { */
-  /* display: flex; */
-  /* background-color: #3c3a39; */
-  /* height: 48px; */
-  /* justify-items: flex-end; */
-  /* width: 100%; */
-/* } */
-
-/* .top-bar-left { */
-  /* flex: 1 1 auto; */
-  /* padding-left: 24px; */
-  /* padding-bottom: 12px; */
-  /* padding-top: 12px; */
-  /* background-color: #3c3a39;
-} */
-
-/* .top-bar-left-name {
-  color: rgb(255, 255, 255);
-  font-family: "Roboto", sans-serif; */
-  /* font-size: 18px; */
-  /* font-style: normal; */
-  /* font-weight: bold; */
-  /* line-height: 24px; */
-/* } */
-
-/* .top-bar-left-name:hover {
-  text-decoration: underline;
-  text-decoration-color: rgb(254, 254, 255);
-} */
-
-/* .intro {
-  padding-top: 20px; */
-  /* display: flex; */
-  /* height: 650px;
-  flex-direction: column;
-  padding-left: 24px;
-} */
+@tailwind utilities; 
 
 /* .hidden {
   display: none !important;
@@ -192,13 +138,6 @@ h3 {
   padding-right: 24px;
 }
 
-/* .social-icons {
-  display: flex;
-  padding-top: 12px;
-  padding-left: 5px;
-  grid-gap: 15px;
-} */
-
 ul {
   list-style-type: none;
 }
@@ -218,15 +157,6 @@ ul {
   padding-bottom: 24px;
   color: #1c1a19;
 }
-
-/* .line {
-  display: flex;
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 2px;
-  height: 1px;
-  background-color: #0a0908;
-} */
 
 .joga {
   padding-top: 50px;
@@ -284,28 +214,6 @@ ul {
   display: flex;
   flex-wrap: wrap;
 }
-
-/* Works on Firefox */
-* {
-  scrollbar-width: thin;
-  scrollbar-color: gray transparent;
-}
-
-/* *::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-*::-webkit-scrollbar-thumb {
-  background-color: rgba(100, 100, 100, 0.5);
-  border-radius: 30px;
-  border: 2px solid transparent;
-  height: 20px;
-}
-
-/* Works on Chrome, Edge, and Safari */
-*::-webkit-scrollbar {
-  width: 6px;
-} */
 
 /* professional section */
 .professional-art > * {
@@ -510,34 +418,6 @@ ul {
   content: url("assets/skill3.svg");
 }
 
-.skills {
-  margin-top: 80px;
-  left: 0;
-  background: #1c1a19;
-  padding-bottom: 100px;
-}
-
-.skilled-1,
-.skilled-2,
-.skilled-3 {
-  font-family: "Inter", sans-serif;
-  font-weight: 700;
-  font-size: 32px;
-  font-style: normal;
-  line-height: 44px;
-  color: white;
-}
-
-.inner-list1,
-.inner-list2,
-.inner-list3 {
-  font-family: "Inter", sans-serif;
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 43px;
-  color: white;
-}
-
 button:hover {
   color: #f55800;
   background-color: #fff5e1;
@@ -564,18 +444,6 @@ button:active {
   flex-direction: column;
   width: 375px;
   left: 0;
-}
-
-.main-text {
-  font-family: "Inter", sans-serif;
-  font-weight: 700;
-  font-size: 32px;
-  margin-top: 110px;
-  margin-left: 24px;
-  margin-right: 24px;
-  text-align: center;
-  line-height: 44px;
-  color: #172b4d;
 }
 
 .f-name,
@@ -667,15 +535,6 @@ button:active {
   background-color: #fff5e1;
 }
 
-/* .social-container {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
-
 .hr-line-bottom {
   text-align: center;
   margin-top: 40px;
@@ -684,7 +543,6 @@ button:active {
   width: 100%;
   background-color: #0a0908;
 }
-
 
 .hr-line-last {
   width: 135px;
@@ -785,11 +643,6 @@ button:active {
     gap: 12px;
   }
 
-  /* .line {
-    margin-top: -50px;
-    margin-left: 350px;
-  } */
-
   .text2 {
     margin-top: -460px;
     margin-left: 50vw;
@@ -883,24 +736,6 @@ button:active {
     margin-top: -260px;
   }
 
-  .inner-list3 {
-    margin-left: 60vw;
-  }
-
-  .cnt-container {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .main-text {
-    font-size: 40px;
-    margin-top: 130px;
-    margin-left: 240px;
-    margin-right: 24px;
-    text-align: left;
-    width: 455px;
-  }
-
   .form-container {
     display: block;
     margin-left: 690px;
@@ -916,13 +751,6 @@ button:active {
   .hr-line-bottom {
     width: 99%;
   }
-
-  /* .social-icons-bottom {
-    display: flex;
-    margin-left: 50%;
-    margin-right: 50%;
-    width: 50%;
-  } */
 
   .hr-line-last {
     display: none;

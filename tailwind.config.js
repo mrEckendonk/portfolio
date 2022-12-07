@@ -4,6 +4,9 @@ const defaultTheme = require('tailwindcss/defaultTheme');
 module.exports = {
   content: ['./src/**/*.{html,js}'],
   theme: {
+        // margin: {
+        //   '60vh': '60vh',
+        // },
     // colors: {
     //   brown: '#3c3a39',
     // },
