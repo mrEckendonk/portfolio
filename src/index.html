@@ -37,7 +37,7 @@
   </head>
 
   <body>
-    <div class="container max-w-full">
+    <div class="container max-w-full h-screen">
       <header class="sticky top-0 z-30 backdrop-filter backdrop-blur-lg">
         <div
           id="mobileMenu"
@@ -89,8 +89,12 @@
               href="https://vecks.com.br"
               class="flex items-center grow py-2.5 text-xl font-roboto font-semibold whitespace-nowrap text-white hover:underline"
             >
-            <img src="./assets/mike.png" class="rounded-full border border-gray-100 shadow-sm h-14 w-14" alt="Mike image" />
-            <p class="m-4">Mike van Eckendonk</p>
+              <img
+                src="./assets/mike.png"
+                class="rounded-full border border-gray-100 shadow-sm h-14 w-14"
+                alt="Mike image"
+              />
+              <p class="m-4">Mike van Eckendonk</p>
             </a>
             <div class="flex items-center md:order-2 md:hidden" id="mobile">
               <button
@@ -274,51 +278,67 @@
               <button type="button" class="about-btn">Get My Resume</button>
             </div>
           </div>
-          <div class="line2"></div>
-          <div class="skills">
-            <ul>
-              <li>
-                <h4 id="language" class="skilled-1">Language</h4>
-                <ul class="inner-list1">
-                  <li>Javascript</li>
-                  <li>Ruby</li>
-                  <li>Html</li>
-                  <li>Css</li>
-                </ul>
-              </li>
-              <li>
-                <h4 id="framework" class="skilled-2">Frameworks</h4>
-                <ul class="inner-list2">
-                  <li>Bootstrap</li>
-                  <li>Ruby on Rails</li>
-                  <li>RSPec</li>
-                  <li>CapyBara</li>
-                  <li>Selenium</li>
-                </ul>
-              </li>
-              <li>
-                <h4 id="skilled" class="skilled-3">Skills</h4>
-                <ul class="inner-list3">
-                  <li>Codekit</li>
-                  <li>Github</li>
-                  <li>Codepen</li>
-                  <li>Gitlab</li>
-                  <li>Terminal</li>
-                </ul>
-              </li>
-            </ul>
+          <p class="mr-24 h-1 bg-white"></p>
+          <div class="flex justify-around mt-60 mb-60 ml-32 mr-32">
+            <div>
+              <h4
+                id="language"
+                class="font-sans font-bold text-2xl leading-10 text-white"
+              >
+                Language
+              </h4>
+              <ul class="font-sans font-normal text-2xl text-white">
+                <li>Javascript</li>
+                <li>Ruby</li>
+                <li>Html</li>
+                <li>Css</li>
+              </ul>
+            </div>
+            <div>
+              <h4
+                id="framework"
+                class="font-sans font-bold text-2xl leading-10 text-white"
+              >
+                Frameworks
+              </h4>
+              <ul class="ml- font-sans font-normal text-2xl text-white">
+                <li>Bootstrap</li>
+                <li>Ruby on Rails</li>
+                <li>RSPec</li>
+                <li>CapyBara</li>
+                <li>Selenium</li>
+              </ul>
+            </div>
+            <div>
+              <h4
+                id="skilled"
+                class="font-sans font-bold text-2xl leading-10 text-white"
+              >
+                Skills
+              </h4>
+              <ul class="ml- font-sans font-normal text-2xl text-white">
+                <li>Codekit</li>
+                <li>Github</li>
+                <li>Codepen</li>
+                <li>Gitlab</li>
+                <li>Terminal</li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
 
       <section id="form_header" class="contact-container">
-        <div class="cnt-container"></div>
-        <div class="main-text">
-          <p>
-            I'm always interested in hearing about new projects, so if you'd
-            like to chat please get in touch.
-          </p>
-        </div>
+        <div class="container">
+        <p
+          class="mt-28 ml-32 font-sans text-4xl font-bold text-center text-slate-500"
+        >
+        <br>I'm always interested
+        <br>in hearing about new
+        <br>projects, so if you'd
+        <br>like to chat please 
+        <br>get in touch.</p>
+          .
         <form
           class="form-container"
           id="fs-frm"
@@ -365,6 +385,9 @@
             </div>
           </div>
         </form>
+      </div>
+      </section>
+
         <hr class="hr-line-bottom" />
       </section>
       <!-- Tailwind ready footer -->
