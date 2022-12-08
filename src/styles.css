@@ -158,11 +158,12 @@ ul {
   color: #1c1a19;
 }
 
-.joga {
-  padding-top: 50px;
-  max-width: 536px;
+/* .joga {
+  padding-top: 290px;
+  padding-left: 140px;
+  max-width: 736px;
   width: 100%;
-}
+} */
 
 .text2 h3 {
   display: flex;
