@@ -1,4 +1,4 @@
-[![Netlify Status]Project Name: Portfolio
+# Portfolio 
 
 This is the Portfolio of Mike van Eckendonk as a page to show all the work he did.
 
@@ -31,11 +31,13 @@ Additional description about the project and its features.
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
+
 have a working git on your localmachine.
 
 ## Install
 
 To get a working local copy up and running follow these simple steps
+
 - open terminal
 - clone this project with the command:
 
@@ -43,12 +45,12 @@ To get a working local copy up and running follow these simple steps
 ```
 $ git clone https://github.com/mrEckendonk/Portfolio.git
 ```
+
 - Finally, run the next command in the terminal to see the web app in your local browser, or also, you can use Live Server in Visual Studio Code.
-```
-$ npm start
-```
 
-
+```
+$ npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
+```
 
 ## Author
 
