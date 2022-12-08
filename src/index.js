@@ -1,7 +1,8 @@
 const cards = [
   {
     title: 'World Energy Event',
-    intro: 'World event about Renewable Energy, Solar Energy, Clean Energy, with fantastic speakers and workshops',
+    intro:
+      'World event about Renewable Energy, Solar Energy, Clean Energy, with fantastic speakers and workshops',
     text: 'World event about Renewable Energy, Solar Energy, Clean Energy, with fantastic speakers and workshops. Many new technologies are coming to the world, and we are going to discuss how to use them. Best of all, we are going to be the best event in the world on these technologies.',
     src: './assets/energy_event.png',
     img: 'energy_event',
@@ -13,7 +14,8 @@ const cards = [
   },
   {
     title: 'Awesome Books List',
-    intro: 'World event about Renewable Energy, Solar Energy, Clean Energy, with fantastic speakers and workshops',
+    intro:
+      'World event about Renewable Energy, Solar Energy, Clean Energy, with fantastic speakers and workshops',
     text: 'Booklist of books that I have read and enjoyed. I have also read a lot of books that I have not enjoyed. Here I can manage my books and read them later.',
     img: 'img1',
     src: 'assets/awesome_books.png',
@@ -37,7 +39,8 @@ const cards = [
   },
   {
     title: 'Website Protfolio',
-    intro: 'World event about Renewable Energy, Solar Energy, Clean Energy, with fantastic speakers and workshops',
+    intro:
+      'World event about Renewable Energy, Solar Energy, Clean Energy, with fantastic speakers and workshops',
     text: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     img: 'img3',
     src: 'assets/image_backgrnd2.png',
@@ -49,7 +52,8 @@ const cards = [
   },
   {
     title: 'Professional Art Printing Data',
-    intro: 'World event about Renewable Energy, Solar Energy, Clean Energy, with fantastic speakers and workshops',
+    intro:
+      'World event about Renewable Energy, Solar Energy, Clean Energy, with fantastic speakers and workshops',
     text: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     img: 'img4',
     src: './assets/energy_event.png',
@@ -61,7 +65,8 @@ const cards = [
   },
   {
     title: 'Data Dashboard Healthcare',
-    intro: 'World event about Renewable Energy, Solar Energy, Clean Energy, with fantastic speakers and workshops',
+    intro:
+      'World event about Renewable Energy, Solar Energy, Clean Energy, with fantastic speakers and workshops',
     text: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     img: 'img2',
     src: './assets/energy_event.png',
@@ -73,7 +78,8 @@ const cards = [
   },
   {
     title: 'Website Protfolio',
-    intro: 'World event about Renewable Energy, Solar Energy, Clean Energy, with fantastic speakers and workshops',
+    intro:
+      'World event about Renewable Energy, Solar Energy, Clean Energy, with fantastic speakers and workshops',
     text: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     img: 'img3',
     src: './assets/energy_event.png',
@@ -162,9 +168,7 @@ function showCards(i) {
 }
 
 function populatePopup(card) {
-  const {
-    title, text, src, tech, links,
-  } = card;
+  const { title, text, src, tech, links } = card;
   const popupTemplate = `<div class="popup">
         <div class="popup-content">
           <header class="popup-header">
@@ -175,13 +179,15 @@ function populatePopup(card) {
           </header>
           <nav class="pro-nav">
             <ul class="pro-cont">
-            ${
-  tech.map((technology) => `
+            ${tech
+              .map(
+                (technology) => `
                 <li class="pro-btn">
                   <a href="#">${technology}</a>
                 </li>
-              `).join('')
-}
+              `
+              )
+              .join('')}
             </ul>
           </nav>
           <div class="middle_section">
@@ -219,7 +225,9 @@ function populatePopup(card) {
         </div>
       </div>
 `;
-  document.querySelector('.projects-container').insertAdjacentHTML('beforeend', popupTemplate);
+  document
+    .querySelector('.projects-container')
+    .insertAdjacentHTML('beforeend', popupTemplate);
   const popupCloseBtn = document.querySelector('.popup-close_btn');
   popupCloseBtn.addEventListener('click', () => {
     document.querySelector('.popup').remove();
@@ -230,19 +238,11 @@ menuHamburgerBtn.addEventListener('click', displayMenu);
 closeBtn.addEventListener('click', displayMenu);
 bubbleCloseBtn.addEventListener('click', closeBubble);
 
-// document.addEventListener('keydown', function(event){
-// 	if(event.key === 27){
-// 		closeBubble();
-// 	}
-// });
-
-const {
-  title, text, src, tech,
-} = cards[0];
+const { title, text, src, tech } = cards[0];
 
 const mainProjecttemplate = `
       <div>
-        <img src="${src}" alt="project image" class="joga" />
+        <img src="${src}" alt="project image" class="md:ml-36 max-w-xl md:max-w-xl" />
       </div>
       <div class="text2">
         <h3>${title}</h3>
@@ -256,15 +256,15 @@ const mainProjecttemplate = `
       <div class="language-container">
         <nav class="nav-page2">
           <ul class="link-tag">
-          ${
-  tech.map(
-    (technology) => `
+          ${tech
+            .map(
+              (technology) => `
               <li class="link-1">
                 ${technology}
               </li>
-            `,
-  ).join('')
-}
+            `
+            )
+            .join('')}
           </ul>
         </nav>
         <button type="button" class="btn2 see_proj">
@@ -285,7 +285,7 @@ for (let i = 1; i < cards.length; i += 1) {
 
 const seeProjList = document.querySelectorAll('.see_proj');
 for (let i = 0; i < seeProjList.length; i += 1) {
-//  seeProjList[i].addEventListener("click", displayPopup);
+  //  seeProjList[i].addEventListener("click", displayPopup);
   seeProjList[i].addEventListener('click', () => {
     populatePopup(cards[i]);
   });
