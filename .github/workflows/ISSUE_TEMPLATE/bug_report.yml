@@ -1,0 +1,47 @@
+name: Bug report
+description: Create a report to help us improve.
+labels:
+  - "bug"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        :warning: PLEASE DESCRIBE ISSUE AS CLEAR AS POSSIBLE !!!
+  - type: textarea
+    attributes:
+      label: Describe the bug
+      description: A clear and concise description of what the bug is.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Expected behaviour
+      description:
+        A clear and concise description of what you expected to happen.
+  - type: textarea
+    attributes:
+      label: Screenshots / Live demo link
+      description: If applicable, add screenshots to help explain your problem.
+      placeholder: Paste the github-readme-stats link as markdown image
+  - type: textarea
+    attributes:
+      label: Additional context
+      description: Add any other context about the problem here.
+  - type: markdownb
+    attributes:
+      value: |
+        ---
+        ### Q: Why do I see this issue/bug layaout?
+        
+        **Ans:** This is a template for creating issues/bugs, it will help us to understand the issue better and faster. 
+
+        #### Q: Can I use markdown in the description?
+
+        **Ans:** Yes, you can use markdown in the description.
+
+        #### Q: Can I use this template for a code review?
+
+        **Ans:** No, this template is only for creating issues/bugs. You can however still use the template for code review, the fields allow you to copy the code and paste it in the description.
+
+
+
