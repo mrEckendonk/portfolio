@@ -1,456 +1,457 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-PPJMX9Z8TM"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
+<head>
+  <meta charset="UTF-8" />
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-PPJMX9Z8TM"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-      gtag('config', 'G-PPJMX9Z8TM');
-    </script>
+    function gtag() {
+      dataLayer.push(arguments);
+    }
 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto:wght@700&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/3a15a5a307.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="styles.css" />
-    <link href="/dist/output.css" rel="stylesheet" />
-    <!-- <link rel="stylesheet" href="debug.css" /> -->
-    <title>Mike's Portfolio</title>
-  </head>
+    gtag("js", new Date());
 
-  <body>
-    <div class="container max-w-full h-screen">
-      <header class="sticky top-0 z-30 backdrop-filter backdrop-blur-lg">
-        <div
-          id="mobileMenu"
-          class="flex w-full h-screen py-5 bg-slate-700 md:hidden"
+    gtag("config", "G-PPJMX9Z8TM");
+  </script>
+
+  <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin href="https://fonts.gstatic.com" rel="preconnect" />
+  <link href="https://rsms.me/inter/inter.css" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto:wght@700&display=swap"
+    rel="stylesheet"
+  />
+  <script
+    crossorigin="anonymous"
+    src="https://kit.fontawesome.com/3a15a5a307.js"
+  ></script>
+  <link href="styles.css" rel="stylesheet" />
+  <link href="/dist/output.css" rel="stylesheet" />
+  <!-- <link rel="stylesheet" href="debug.css" /> -->
+  <title>Mike's Portfolio</title>
+</head>
+
+<body>
+<div class="container max-w-full h-screen">
+  <header class="sticky top-0 z-30 backdrop-filter backdrop-blur-lg">
+    <div
+      class="flex w-full h-screen py-5 bg-slate-700 md:hidden"
+      id="mobileMenu"
+    >
+      <ul>
+        <li>
+          <a class="px-8 text-2xl text-white" href="#portfolio"
+          >Portfolio</a
+          >
+        </li>
+        <li>
+          <a class="px-8 text-2xl text-white" href="#about_section"
+          >About</a
+          >
+        </li>
+        <li>
+          <a class="px-8 text-2xl text-white" href="#contact_section"
+          >Contact</a
+          >
+        </li>
+      </ul>
+
+      <div class="close-mobile">
+        <svg
+          class="h-6 w-6 text-gray-500"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          viewBox="0 0 22 22"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <ul>
-            <li>
-              <a href="#portfolio" class="px-8 text-2xl text-white"
-                >Portfolio</a
-              >
-            </li>
-            <li>
-              <a href="#about_section" class="px-8 text-2xl text-white"
-                >About</a
-              >
-            </li>
-            <li>
-              <a href="#contact_section" class="px-8 text-2xl text-white"
-                >Contact</a
-              >
-            </li>
-          </ul>
+          <path
+            clip-rule="evenodd"
+            d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z"
+            fill-rule="evenodd"
+          />
+        </svg>
+      </div>
+    </div>
 
-          <div class="close-mobile">
+    <nav
+      class="px-4 md:px-4 py-2.5 bg-stone-800 bg-opacity-50 border-b border-gray-200"
+    >
+      <div
+        class="flex flex-wrap justify-between md:w-5/6 items-center mx-auto"
+      >
+        <a
+          class="flex items-center grow py-2.5 text-xl font-roboto font-semibold whitespace-nowrap text-white hover:underline"
+          href="https://vecks.com.br"
+        >
+          <img
+            alt="Mike image"
+            class="rounded-full border border-gray-100 shadow-sm h-14 w-14"
+            src="./assets/mike.png"
+          />
+          <p class="m-4">Mike van Eckendonk</p>
+        </a>
+        <div class="flex items-center md:order-2 md:hidden" id="mobile">
+          <button
+            aria-controls="mega-menu"
+            aria-expanded="false"
+            class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg"
+            data-collapse-toggle="mega-menu"
+            type="button"
+          >
             <svg
+              aria-hidden="true"
+              class="w-6 h-6"
+              fill="currentColor"
+              viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
-              class="h-6 w-6 text-gray-500"
-              fill="none"
-              viewBox="0 0 22 22"
-              stroke="currentColor"
-              stroke-width="2"
             >
               <path
-                fill-rule="evenodd"
-                d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z"
                 clip-rule="evenodd"
-              />
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                fill-rule="evenodd"
+              ></path>
             </svg>
-          </div>
+          </button>
         </div>
-
-        <nav
-          class="px-4 md:px-4 py-2.5 bg-stone-800 bg-opacity-50 border-b border-gray-200"
+        <div
+          class="hidden justify-between items-center w-full pr-6 text-sm md:flex md:w-auto md:order-1"
+          id="mega-menu"
         >
-          <div
-            class="flex flex-wrap justify-between md:w-5/6 items-center mx-auto"
+          <ul
+            class="flex flex-col mt-4 font-medium md:flex-row md:space-x-8 md:mt-0"
           >
-            <a
-              href="https://vecks.com.br"
-              class="flex items-center grow py-2.5 text-xl font-roboto font-semibold whitespace-nowrap text-white hover:underline"
-            >
-              <img
-                src="./assets/mike.png"
-                class="rounded-full border border-gray-100 shadow-sm h-14 w-14"
-                alt="Mike image"
-              />
-              <p class="m-4">Mike van Eckendonk</p>
-            </a>
-            <div class="flex items-center md:order-2 md:hidden" id="mobile">
-              <button
-                data-collapse-toggle="mega-menu"
-                type="button"
-                class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg"
-                aria-controls="mega-menu"
-                aria-expanded="false"
+            <li>
+              <a
+                aria-current="page"
+                class="block py-2 pr-4 pl-3 text-gray-100 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0"
+                href="#portfolio"
+              >Portfolio</a
               >
+            </li>
+
+            <li>
+              <a
+                class="block py-2 pr-4 pl-3 text-gray-100 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0"
+                href="#about_header"
+              >About</a
+              >
+            </li>
+            <li>
+              <a
+                class="block py-2 pr-4 pl-3 text-gray-100 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0"
+                href="mailto:mike.e@vecks.com.br"
+              >Contact</a
+              >
+            </li>
+            <li>
+              <a href="mailto:mike.e@vecks.com.br">
                 <svg
-                  aria-hidden="true"
-                  class="w-6 h-6"
+                  class="h-6 w-6 text-gray-100 hover:text-gray-400"
                   fill="currentColor"
-                  viewBox="0 0 20 20"
+                  viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    fill-rule="evenodd"
-                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                    clip-rule="evenodd"
-                  ></path>
+                    d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z"
+                  />
+                  <path
+                    d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z"
+                  />
                 </svg>
-              </button>
-            </div>
-            <div
-              id="mega-menu"
-              class="hidden justify-between items-center w-full pr-6 text-sm md:flex md:w-auto md:order-1"
-            >
-              <ul
-                class="flex flex-col mt-4 font-medium md:flex-row md:space-x-8 md:mt-0"
-              >
-                <li>
-                  <a
-                    href="#portfolio"
-                    class="block py-2 pr-4 pl-3 text-gray-100 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0"
-                    aria-current="page"
-                    >Portfolio</a
-                  >
-                </li>
-
-                <li>
-                  <a
-                    href="#about_header"
-                    class="block py-2 pr-4 pl-3 text-gray-100 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0"
-                    >About</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="mailto:mike.e@vecks.com.br"
-                    class="block py-2 pr-4 pl-3 text-gray-100 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0"
-                    >Contact</a
-                  >
-                </li>
-                <li>
-                  <a href="mailto:mike.e@vecks.com.br">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="h-6 w-6 text-gray-100 hover:text-gray-400"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      class="w-6 h-6"
-                    >
-                      <path
-                        d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z"
-                      />
-                      <path
-                        d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z"
-                      />
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </header>
-
-      <section
-        class="flex pt-6 pl-10 bg-slate-900 background background-desktop"
-      >
-        <!-- 5 social icons vertical -->
-
-        <div class="flex flex-col space-y-4 py-10 items-center justify-center">
-          <ul>
-            <li>
-              <a
-                rel="noopener noreferrer"
-                href="https://github.com/mrEckendonk"
-                target="_blank"
-              >
-                <i
-                  class="m-1 p-2 hover:animate-ping fa-brands fa-github text-white text-lg"
-                ></i>
               </a>
-            </li>
-            <li>
-              <a
-                rel="noopener noreferrer"
-                href="https://www.linkedin.com/in/mike-van-eckendonk"
-                target="_blank"
-              >
-                <i
-                  class="lm-1 p-2 hover:animate-ping fa-brands fa-linkedin-in text-white text-lg"
-                >
-                </i>
-              </a>
-            </li>
-            <li>
-              <a rel="noopener noreferrer" href="#" target="_blank">
-                <i
-                  class="lm-1 p-2 hover:animate-ping fa-brands fa-angellist text-white text-lg"
-                >
-                </i>
-              </a>
-            </li>
-            <li>
-              <a
-                rel="noopener noreferrer"
-                href="https://twitter.com/mike_eckendonk"
-                target="_blank"
-                ><i
-                  class="lm-1 p-2 hover:animate-ping fa-brands fa-square-twitter text-white text-lg"
-                >
-                </i>
-              </a>
-            </li>
-            <li>
-              <a rel="noopener noreferrer" href="#" target="_blank"
-                ><i
-                  class="lm-1 p-2 hover:animate-ping fa-brands fa-medium text-white text-lg"
-                >
-                </i
-              ></a>
             </li>
           </ul>
         </div>
+      </div>
+    </nav>
+  </header>
 
-        <div class="flex flex-col justify-center m-12 pl-10 max-w-2xl">
-          <h1 class="text-4xl font-bold leading-10 text-amber-600">
-            Hey There.<br />I’m Mike
-          </h1>
-          <h2 class="text-2xl font-bold leading-10 text-white">
-            I’am a Software Developer
-          </h2>
-          <p class="text-lg text-white md:w-5/6">
-            I can help you build a product, feature or website. Look through
-            some of my work and experience! If you like what you see and have a
-            project you need coded, don’t hesitate to contact me.
-          </p>
-        </div>
-      </section>
+  <section
+    class="flex pt-6 pl-10 bg-slate-900 background background-desktop"
+  >
+    <!-- 5 social icons vertical -->
 
-      <section class="flex">
-        <div class="flex w-screen items-center">
-          <h3 class="mx-8 md:pl-3 pt-8 text-3xl font-semibold recent-work">
-            My Recent Works
-          </h3>
-          <hr class="h-1 w-4/6 ml-10 rounded border-0 bg-amber-600" />
-        </div>
-      </section>
-
-      <section>
-        <div id="works_section"></div>
-        <div class="container-section projects-container">
-          <div class="container-section1"></div>
-        </div>
-      </section>
-
-      <section>
-        <div id="about_section" class="about-me">
-          <div class="backgroundabout-me">
-            <div class="first" id="about_header">
-              <h2>About me</h2>
-            </div>
-            <div class="second">
-              <p>
-                Hello I’m a software developer! I can help you build a product,
-                feature or website Look through some of my work and experience!
-                If you like what you see and have a project you need coded,
-                don’t hesitate to contact me.
-              </p>
-              <br />
-              <button type="button" class="about-btn">Get My Resume</button>
-            </div>
-          </div>
-          <p class="mr-24 h-1 bg-white"></p>
-          <div class="flex justify-around mt-60 mb-60 ml-32 mr-32">
-            <div>
-              <h4
-                id="language"
-                class="font-sans font-bold text-2xl leading-10 text-white"
-              >
-                Language
-              </h4>
-              <ul class="font-sans font-normal text-2xl text-white">
-                <li>Javascript</li>
-                <li>Ruby</li>
-                <li>Html</li>
-                <li>Css</li>
-              </ul>
-            </div>
-            <div>
-              <h4
-                id="framework"
-                class="font-sans font-bold text-2xl leading-10 text-white"
-              >
-                Frameworks
-              </h4>
-              <ul class="ml- font-sans font-normal text-2xl text-white">
-                <li>Bootstrap</li>
-                <li>Ruby on Rails</li>
-                <li>RSPec</li>
-                <li>CapyBara</li>
-                <li>Selenium</li>
-              </ul>
-            </div>
-            <div>
-              <h4
-                id="skilled"
-                class="font-sans font-bold text-2xl leading-10 text-white"
-              >
-                Skills
-              </h4>
-              <ul class="ml- font-sans font-normal text-2xl text-white">
-                <li>Codekit</li>
-                <li>Github</li>
-                <li>Codepen</li>
-                <li>Gitlab</li>
-                <li>Terminal</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="form_header" class="contact-container">
-        <div class="container">
-          <p
-            class="mt-28 ml-32 font-sans text-4xl font-bold text-center text-slate-500"
+    <div class="flex flex-col space-y-4 py-10 items-center justify-center">
+      <ul>
+        <li>
+          <a
+            href="https://github.com/mrEckendonk"
+            rel="noopener noreferrer"
+            target="_blank"
           >
-            <br />I'm always interested <br />in hearing about new
-            <br />projects, so if you'd <br />like to chat please <br />get in
-            touch.
-          </p>
-          .
-          <form
-            class="form-container"
-            id="fs-frm"
-            name="simple-contact-form"
-            accept-charset="utf-8"
-            action="https://formspree.io/f/xyyloboj"
-            method="post"
+            <i
+              class="m-1 p-2 hover:animate-ping fa-brands fa-github text-white text-lg"
+            ></i>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/mike-van-eckendonk"
+            rel="noopener noreferrer"
+            target="_blank"
           >
-            <input
-              class="form-input1"
-              type="text"
-              name="name"
-              maxlength="30"
-              id="full-name"
-              placeholder="Full name"
-              required
-            />
-            <hr class="contact-hr" />
-            <input
-              class="form-input2"
-              type="email"
-              name="_replyto"
-              id="email-address"
-              placeholder="Email address"
-              required
-            />
-            <hr class="contact-hr" />
-            <textarea
-              class="form-text"
-              rows="5"
-              name="message"
-              maxlength="500"
-              id="message"
-              placeholder="Enter text here"
-              required
-            ></textarea>
-            <button class="about-btn4" type="submit">Get in touch</button>
-            <div class="bubble_error hidden">
-              <div class="bubble_content">
-                <p>Email address should contain lowercase only</p>
-                <div class="bubble_close popup-close_btn">
-                  <img src="assets/Icon-Cancel.png" alt="Cancel Button" />
-                </div>
-              </div>
-            </div>
-          </form>
-        </div>
-      </section>
-
-      <hr class="hr-line-bottom" />
-      <!-- </section> -->
-
-      <!-- Tailwind ready footer -->
-      <section>
-        <ul class="flex flex-wrap items-center justify-center">
-          <li>
-            <a
-              rel="noopener noreferrer"
-              href="https://github.com/mrEckendonk"
-              target="_blank"
+            <i
+              class="lm-1 p-2 hover:animate-ping fa-brands fa-linkedin-in text-white text-lg"
             >
-              <i
-                class="m-1 p-2 hover:animate-ping fa-brands fa-github text-gray-700 text-lg"
-              ></i>
-            </a>
-          </li>
-          <li class="">
-            <a
-              rel="noopener noreferrer"
-              href="https://www.linkedin.com/in/mike-van-eckendonk"
-              target="_blank"
+            </i>
+          </a>
+        </li>
+        <li>
+          <a href="#" rel="noopener noreferrer" target="_blank">
+            <i
+              class="lm-1 p-2 hover:animate-ping fa-brands fa-angellist text-white text-lg"
             >
-              <i
-                class="lm-1 p-2 hover:animate-ping fa-brands fa-linkedin-in text-gray-700 text-lg"
-              >
-              </i>
-            </a>
-          </li>
-          <li>
-            <a rel="noopener noreferrer" href="#" target="_blank">
-              <i
-                class="lm-1 p-2 hover:animate-ping fa-brands fa-angellist text-gray-700 text-lg"
-              >
-              </i>
-            </a>
-          </li>
-          <li>
-            <a
-              rel="noopener noreferrer"
-              href="https://twitter.com/mike_eckendonk"
-              target="_blank"
-              ><i
-                class="lm-1 p-2 hover:animate-ping fa-brands fa-square-twitter text-gray-700 text-lg"
-              >
-              </i>
-            </a>
-          </li>
-          <li>
-            <a rel="noopener noreferrer" href="#" target="_blank"
-              ><i
-                class="lm-1 p-2 hover:animate-ping fa-brands fa-medium text-gray-700 text-lg"
-              >
-              </i
-            ></a>
-          </li>
-        </ul>
-      </section>
-      <!-- <div class="hr-line-last"></div> -->
-
-      <script src="index.js" defer></script>
+            </i>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://twitter.com/mike_eckendonk"
+            rel="noopener noreferrer"
+            target="_blank"
+          ><i
+            class="lm-1 p-2 hover:animate-ping fa-brands fa-square-twitter text-white text-lg"
+          >
+          </i>
+          </a>
+        </li>
+        <li>
+          <a href="#" rel="noopener noreferrer" target="_blank"
+          ><i
+            class="lm-1 p-2 hover:animate-ping fa-brands fa-medium text-white text-lg"
+          >
+          </i
+          ></a>
+        </li>
+      </ul>
     </div>
-  </body>
+
+    <div class="flex flex-col justify-center m-12 pl-10 max-w-2xl">
+      <h1 class="text-4xl font-bold leading-10 text-amber-600">
+        Hey There.<br />I&rsquo;m Mike
+      </h1>
+      <h2 class="text-2xl font-bold leading-10 text-white">
+        I&rsquo;am a Software Developer
+      </h2>
+      <p class="text-lg text-white md:w-5/6">
+        I can help you build a product, feature or website. Look through
+        some of my work and experience! If you like what you see and have a
+        project you need coded, don’t hesitate to contact me.
+      </p>
+    </div>
+  </section>
+
+  <section class="flex">
+    <div class="flex w-screen items-center">
+      <h3 class="mx-8 md:pl-3 pt-8 text-3xl font-semibold recent-work">
+        My Recent Works
+      </h3>
+      <hr class="h-1 w-4/6 ml-10 rounded border-0 bg-amber-600" />
+    </div>
+  </section>
+
+  <section>
+    <div id="works_section"></div>
+    <div class="container-section projects-container">
+      <div class="container-section1"></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="about-me" id="about_section">
+      <div class="backgroundabout-me">
+        <div class="first" id="about_header">
+          <h2>About me</h2>
+        </div>
+        <div class="second">
+          <p>
+            Hello I’m a software developer! I can help you build a product,
+            feature or website Look through some of my work and experience!
+            If you like what you see and have a project you need coded,
+            don’t hesitate to contact me.
+          </p>
+          <br />
+          <button class="about-btn" type="button">Get My Resume</button>
+        </div>
+      </div>
+      <p class="mr-24 h-1 bg-white"></p>
+      <div class="flex justify-around mt-60 mb-60 ml-32 mr-32">
+        <div>
+          <h4
+            class="font-sans font-bold text-2xl leading-10 text-white"
+            id="language"
+          >
+            Language
+          </h4>
+          <ul class="font-sans font-normal text-2xl text-white">
+            <li>Javascript</li>
+            <li>Ruby</li>
+            <li>Html</li>
+            <li>Css</li>
+          </ul>
+        </div>
+        <div>
+          <h4
+            class="font-sans font-bold text-2xl leading-10 text-white"
+            id="framework"
+          >
+            Frameworks
+          </h4>
+          <ul class="ml- font-sans font-normal text-2xl text-white">
+            <li>Bootstrap</li>
+            <li>Ruby on Rails</li>
+            <li>RSPec</li>
+            <li>CapyBara</li>
+            <li>Selenium</li>
+          </ul>
+        </div>
+        <div>
+          <h4
+            class="font-sans font-bold text-2xl leading-10 text-white"
+            id="skilled"
+          >
+            Skills
+          </h4>
+          <ul class="ml- font-sans font-normal text-2xl text-white">
+            <li>Codekit</li>
+            <li>Github</li>
+            <li>Codepen</li>
+            <li>Gitlab</li>
+            <li>Terminal</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-container" id="form_header">
+    <div class="container">
+      <p
+        class="mt-28 ml-32 font-sans text-4xl font-bold text-center text-slate-500"
+      >
+        <br />I'm always interested <br />in hearing about new
+        <br />projects, so if you'd <br />like to chat please <br />get in
+        touch.
+      </p>
+      .
+      <form
+        accept-charset="utf-8"
+        action="https://formspree.io/f/xyyloboj"
+        class="form-container"
+        id="fs-frm"
+        method="post"
+        name="simple-contact-form"
+      >
+        <input
+          class="form-input1"
+          id="full-name"
+          maxlength="30"
+          name="name"
+          placeholder="Full name"
+          required
+          type="text"
+        />
+        <hr class="contact-hr" />
+        <input
+          class="form-input2"
+          id="email-address"
+          name="_replyto"
+          placeholder="Email address"
+          required
+          type="email"
+        />
+        <hr class="contact-hr" />
+        <textarea
+          class="form-text"
+          id="message"
+          maxlength="500"
+          name="message"
+          placeholder="Enter text here"
+          required
+          rows="5"
+        ></textarea>
+        <button class="about-btn4" type="submit">Get in touch</button>
+        <div class="bubble_error hidden">
+          <div class="bubble_content">
+            <p>Email address should contain lowercase only</p>
+            <div class="bubble_close popup-close_btn">
+              <img alt="Cancel Button" src="assets/Icon-Cancel.png" />
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <hr class="hr-line-bottom" />
+  <!-- </section> -->
+
+  <!-- Tailwind ready footer -->
+  <section>
+    <ul class="flex flex-wrap items-center justify-center">
+      <li>
+        <a
+          href="https://github.com/mrEckendonk"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <i
+            class="m-1 p-2 hover:animate-ping fa-brands fa-github text-gray-700 text-lg"
+          ></i>
+        </a>
+      </li>
+      <li class="">
+        <a
+          href="https://www.linkedin.com/in/mike-van-eckendonk"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <i
+            class="lm-1 p-2 hover:animate-ping fa-brands fa-linkedin-in text-gray-700 text-lg"
+          >
+          </i>
+        </a>
+      </li>
+      <li>
+        <a href="#" rel="noopener noreferrer" target="_blank">
+          <i
+            class="lm-1 p-2 hover:animate-ping fa-brands fa-angellist text-gray-700 text-lg"
+          >
+          </i>
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://twitter.com/mike_eckendonk"
+          rel="noopener noreferrer"
+          target="_blank"
+        ><i
+          class="lm-1 p-2 hover:animate-ping fa-brands fa-square-twitter text-gray-700 text-lg"
+        >
+        </i>
+        </a>
+      </li>
+      <li>
+        <a href="#" rel="noopener noreferrer" target="_blank"
+        ><i
+          class="lm-1 p-2 hover:animate-ping fa-brands fa-medium text-gray-700 text-lg"
+        >
+        </i
+        ></a>
+      </li>
+    </ul>
+  </section>
+  <!-- <div class="hr-line-last"></div> -->
+
+  <script defer src="index.js"></script>
+</div>
+</body>
 </html>
